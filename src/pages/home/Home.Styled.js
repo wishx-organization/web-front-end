@@ -565,10 +565,6 @@ overflow: hidden;
                 color: white;
 
               }
-
-              .bottom .bottom-title{
-                margin-left: 60px;
-              }
             }
           }
         }
