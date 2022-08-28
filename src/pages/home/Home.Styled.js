@@ -60,7 +60,7 @@ export const HomeTop = styled(Grid)`
     border-radius: 24px;
     padding: 21px 32px;
     /* width: 100%; */
-    height: 939px;
+    height: 910px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -106,6 +106,8 @@ export const HomeTop = styled(Grid)`
         
       }
 
+
+
       @media screen and (max-width: ${({ theme }) => theme.breakPoints.md}) {
         flex-direction: column;
       }
@@ -117,6 +119,13 @@ export const HomeTop = styled(Grid)`
       }
     }
   }
+
+  .colCenterCenter #head p{
+    @media screen and (max-width: ${({ theme }) => theme.breakPoints.sm}) {
+      font-size: 42px;
+    }
+  }  
+
   #head-center {
     text-align: center;
     font-weight: 500;
@@ -233,6 +242,7 @@ export const HomeTop = styled(Grid)`
     padding: 12px, 16px;
   }
 `;
+
 
 export const HomeCenter = styled.div`
 z-index: 10;
@@ -674,6 +684,8 @@ export const GifHeader = styled.h5`
 export const WishesText = styled.h2`
   padding-bottom: 50px;
   padding-top: 100px;
+  font-weight: 600;
+  font-size: 37px;
 `
 
 export const WishesBtn = styled(Container)`
@@ -816,7 +828,7 @@ export const InsiderContainer = styled(Container)`
           align-items: center;
 
           @media screen and (max-width: ${({ theme }) => theme.breakPoints.md}){
-            height: 200px;
+            height: 80px;
             align-items: center;
           }
 
@@ -839,7 +851,8 @@ export const InsiderContainer = styled(Container)`
 
             @media screen and (min-width: ${({ theme }) => theme.breakPoints.md}){
               font-family: 'Steppe';
-              font-size: 27px;
+              font-size: 40px;
+              padding-top: 40px;
             }
 
             @media screen and (max-width: ${({ theme }) => theme.breakPoints.md}){
@@ -860,7 +873,7 @@ export const InsiderContainer = styled(Container)`
 
             @media screen and (max-width: ${({ theme }) => theme.breakPoints.xs}){
               font-family: 'Steppe';
-              font-size: 45px;
+              font-size: 35px;
               width: 90%;
               text-align:center;
               align-items: center;
@@ -878,18 +891,17 @@ export const InsiderContainer = styled(Container)`
           padding-bottom: 20px;
            
           @media screen and (max-width: ${({ theme }) => theme.breakPoints.md}){
-            height: 600px;
+            height: 270px;
             align-items: start;
           }
 
           @media screen and (max-width: ${({ theme }) => theme.breakPoints.sm}){
-            height: 600px;
+            height: 270px;
             align-items: start;
           }
 
           .bottom-title{
-            width: 60%;
-            margin-left: 60px;
+            width: 51%;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
@@ -951,7 +963,8 @@ export const InsiderContainer = styled(Container)`
               font-family: 'Inter';
               font-style: normal;
               font-weight: 400;
-              font-size: 25px;
+              font-size: 16px;
+              margin: 0;
               width: 90%;
               align-items:start;
               text-align: center;   
@@ -1042,7 +1055,7 @@ export const InsiderContainer = styled(Container)`
                 }
 
                 .download-content{
-                  color: #FFFFFF;
+                  color: grey;
                   font-size: 16px;
                   margin-top: 10px;
 
@@ -1057,6 +1070,7 @@ export const InsiderContainer = styled(Container)`
                   font-weight: 600;
                   font-size: 45px;
                   line-height: 120%;
+                  padding-top: 15px;
                   color: white;
 
                   @media screen and (min-width: ${({ theme }) => theme.breakPoints.lg}){
@@ -1103,7 +1117,7 @@ export const InsiderContainer = styled(Container)`
                 }
 
                 .download-content{
-                  color: #FFFFFF;
+                  color: grey;
                   font-size: 16px;
                   margin-top: 10px;
 
@@ -1118,6 +1132,7 @@ export const InsiderContainer = styled(Container)`
                   font-weight: 600;
                   font-size: 45px;
                   line-height: 120%;
+                  padding-top: 15px;
                   color: white;
 
                   @media screen and (min-width: ${({ theme }) => theme.breakPoints.lg}){

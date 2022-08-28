@@ -84,7 +84,7 @@ const Home = () => {
     const arrow_left = document.querySelector('.carousel-control-prev');
     const arrow_right = document.querySelector('.carousel-control-next');
 
-    // let child = arrow_left.children;
+    // let child = aarrow_left.children;
     // child[0].remove();
 
     // let child_1 = arrow_right.children;
@@ -217,7 +217,7 @@ const Home = () => {
                   />
                   <p>On my birthday</p>
                 </div>
-                <Button>Create a wish</Button>
+                <Button className="create-wish-btn">Create a wish</Button>
               </div>
               {/* ---- */}
             </div>
@@ -547,8 +547,7 @@ const Home = () => {
           <div className="title">
             <div className="top">
               <p className="top-title">
-                Application
-                that <br/> makes sense
+              Applications that makes sense
               </p>
             </div>
             <div className="bottom">

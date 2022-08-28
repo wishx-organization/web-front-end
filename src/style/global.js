@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+import '../style/steppe-font/Web-PS/Steppe.css'
 
 const GlobalStyle = createGlobalStyle`
 
@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    // font-family: 'Steppe' !important;  
     }
 
     li{
@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        /* font-family: 'Manrope', sans-serif; */
+        font-family: 'Steppe' !important;  
     }
 `;
 export default GlobalStyle;

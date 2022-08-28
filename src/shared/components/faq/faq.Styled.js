@@ -47,6 +47,8 @@ export const FaqContainer = styled(Container) `
     .faq-txt {
         padding-left: 100px;
         padding-bottom: 30px;
+        font-size: 37px;
+        font-weight: 600;
 
         @media screen and (max-width: ${({ theme }) => theme.breakPoints.xs}){
             text-align: center;
