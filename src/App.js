@@ -16,6 +16,7 @@ import BlogSearchResult from "./pages/blog/blog-search-result";
 import BlogSRNotFound from "./pages/blog/blogsearch-noResult";
 import BlogPost from "./pages/blog/blog-post";
 import SettingsPage from "./pages/settings";
+import OtherUserProfileActive from "./pages/profile/other-users-profile-active-wishes";
 import './index.css'
 
 const App = () => {
@@ -24,7 +25,8 @@ const App = () => {
       <GlobalStyle />
       <AppProvider>
         <Routes>
-        <Route path="/settings" element={<SettingsPage/>} />
+          <Route path="/user-profile-active-wishes" element={<OtherUserProfileActive />} />
+          <Route path="/settings" element={<SettingsPage/>} />
           <Route path="/blog-post" element={<BlogPost/>} />
           <Route path="/blog-search-result-notfound" element={<BlogSRNotFound />} />
           <Route path="/blog-search-result" element={<BlogSearchResult/>} />
