@@ -7,7 +7,7 @@ export const BlogMainSection = styled(Container) `
     padding-right: 100px;
     @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 16px;
     }
     
     
