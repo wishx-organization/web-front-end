@@ -16,7 +16,7 @@ const ErrorPage = () => {
 
             <Buttons>
                 <Button style={{ background: "#3800B0" }}>Go to wishes list page</Button>
-                <div style={{ width: 150 }}>
+                <div style={{ width: 162 }}>
                     <Button className="btn" fullWidth variant="outline">
                         Go to main page
                     </Button>

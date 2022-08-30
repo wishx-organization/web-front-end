@@ -7,18 +7,23 @@ export const BlogMainSection = styled(Container) `
     overflow-x: hidden;
     padding-right: 130px;
 
+    @media screen and (max-width: ${({ theme }) => theme.breakPoints.sm}){
+        padding-left:15px;
+        padding-right:15px;
+    }
+
     .grid-card-root {
         margin:0px;
     }
 
     .grid-root {
-        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        @media screen and (max-width: ${({ theme }) => theme.breakPoints.sm}){
             display: block;
         }
     }
 
     .col-root-img {
-        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        @media screen and (max-width: ${({ theme }) => theme.breakPoints.sm}){
             max-width: 97.6%;
         }
 
@@ -36,10 +41,6 @@ export const BlogMainSection = styled(Container) `
         }
     }
 
-    @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
-        padding-left:15px;
-        padding-right:15px;
-    }
 
     .instruction h2 {
         font-size: 50px;
