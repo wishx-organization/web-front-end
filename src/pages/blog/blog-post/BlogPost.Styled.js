@@ -56,6 +56,11 @@ export const BlogPostSection = styled(Container) `
     .main-txt h1 {
         font-size: 50px;
         font-weight: 600;
+
+        @media screen and (max-width: ${({ theme }) => theme.breakPoints.sm}) {
+            font-size: 40px;
+            padding-top: 10px;
+        }
     }
 
     .mantine-Image-image {
@@ -71,6 +76,10 @@ export const BlogPostSection = styled(Container) `
         font-size: 13px;
         color: grey;
         padding-top: 10px;
+
+        @media screen and (max-width: ${({ theme }) => theme.breakPoints.sm}) {
+            padding-bottom: 20px;
+        }
     }
 
     .mt-5{

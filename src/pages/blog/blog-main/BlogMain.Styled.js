@@ -38,7 +38,7 @@ export const BlogMainSection = styled(Container) `
 
     @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
         padding-left:15px;
-        padding-right:0px;
+        padding-right:15px;
     }
 
     .instruction h2 {

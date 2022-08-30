@@ -29,7 +29,7 @@ const BlogPost = () => {
                     <p>May 20 {"|"} Travel</p>
                 </div>
                 <ColaImg className="first-image-container">
-                    <Image className="first-image" radius={20} height={200}
+                    <Image className="first-image" radius={20}
                         src={colapostimg}
                     />
                 </ColaImg>
