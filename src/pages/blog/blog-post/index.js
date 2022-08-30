@@ -28,11 +28,9 @@ const BlogPost = () => {
                     <h1>Custom Las Vegas-Themed Corporate Event Gifts for Coca-Cola</h1>
                     <p>May 20 {"|"} Travel</p>
                 </div>
-                <ColaImg>
-                    <Image
-                        height={300}
+                <ColaImg className="first-image-container">
+                    <Image className="first-image" radius={20} height={200}
                         src={colapostimg}
-
                     />
                 </ColaImg>
                 <div className="mt-5">
@@ -50,7 +48,7 @@ const BlogPost = () => {
                     <br />
                     I arrived in the morning and Sarah and her team were busy at work on their last big wedding of the year! White blooms for days. Just breathtaking.
                 </p>
-                <Image className="colapostimg" height={300} width={550} style={{ paddingLeft: "180px" }} src={colagrid} />
+                <Image className="colapostimg" src={colagrid} />
                 <p className="second-txt">
                     When a creative-at-heart person such as myself invests fifteen years in the corporate world and then finally takes a leap of faith to start over where they really belong, getting the chance to tour an award-winning design studio is like heaven on earth. Not to mention, the opportunity to brainstorm with an expert like Sarah. Priceless. <br />
                     <br />

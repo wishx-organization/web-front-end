@@ -5,7 +5,8 @@ export const Body = styled.div`
     background: #E5E5E5;
 
     .col-one {
-        padding-left: 160px;
+        padding-left: 114px;
+        padding-right: 50px;
     }
 
     .main-grid {
@@ -14,23 +15,33 @@ export const Body = styled.div`
 
     .main-tab {
         display: flex;
-        gap: 80px;
-        border: 1px solid grey;
+        border: 1px solid #bcbcbc;
         padding-left: 0px;
-        width: 87%;
+        width: 99.5%;
         border-radius: 9px;
     }
 
+    .col-two-sect {
+        max-width: 60.5%;
+    }
+
     .anytabname {
-        color: #3800B0;
-        border: 1px solid #3800B0;
+        color: #160046;
         padding: 11px;
         width: 37%;
         text-align: center;
         cursor: pointer;
-        border-radius: 8px;
         height: 47px;
+    }
+
+    .anytabname:focus {
+        border: 1px solid #3800B0;
         background: #EBE5F7;
+        color: #3800B0;
+        padding: 11px;
+        width: 37%;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
     .tabname {
@@ -38,12 +49,23 @@ export const Body = styled.div`
         padding: 11px;
         text-align: center;
         cursor: pointer;
+        width: 37%;
+    }
+
+    .tabname:focus {
+        border: 1px solid #3800B0;
+        background: #EBE5F7;
+        color: #3800B0;
+        padding: 11px;
+        border-radius: 8px;
+        width: 37%;
+        cursor: pointer;
     }
 `
 
 export const FotoSection = styled(Container)`
     padding-top: 20px;
-    max-width: 1270px;
+    max-width: 88%;
     padding-bottom: 10px;
     
     .rainbow {

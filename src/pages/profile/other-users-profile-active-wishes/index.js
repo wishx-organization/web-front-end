@@ -1,4 +1,23 @@
-import { Container, Grid, Image, Button } from '@mantine/core';
+import { Container, Grid, Progress, Image, Button } from '@mantine/core';
+import { WishesBtn, PartnersText } from '../../home/Home.Styled'
+
+import { Carddata } from "../../home/CardData"
+import {
+    Wrapper,
+    ImgWrapper,
+    ContentWrapper,
+    Title,
+    UserWrapper,
+    UserAbout,
+    UserName,
+    UserDesc,
+    UserPhoto,
+    PriceWrapper,
+    Prices,
+    LeftPrice,
+    RightPrice,
+    ProgressWrapper
+} from "../../../shared/components/home/homeCard/HomeCard.styled"
 import React from "react";
 import { Body, DateSection, FotoSection, LeftSection, Namesurname, TagName, Text, Date, DateText, FollowersSection, Follower, Following, ButtonSection } from "./OtherUPAW.Styled";
 import rainbowfoto from '../../../style/icons/rainbowfoto.png'
@@ -32,22 +51,154 @@ const OtherUserProfileActive = () => {
                             </ButtonSection>
                         </LeftSection>
                     </Grid.Col>
-                    <Grid.Col span={8}>
+                    <Grid.Col className='col-two-sect' span={8}>
                         <Tabs>
                             <TabList className="main-tab">
-                                <Tab className="anytabname">Active wishes</Tab>
-                                <Tab className="tabname">Complete wishes</Tab>
-                                <Tab className="tabname">Congratulations</Tab>
+                                <Tab className="anytabname">Active wishes <span style={{ color: "#3800B0" }} className='ml-2'> 4</span></Tab>
+                                <Tab className="tabname">Complete wishes <span style={{ color: "#3800B0" }} className='ml-2'> 4</span></Tab>
+                                <Tab className="tabname">Congratulations <span style={{ color: "#3800B0" }} className='ml-2'> 4</span></Tab>
                             </TabList>
 
                             <TabPanel>
                                 <h2>Any content 1</h2>
+
+                                <Grid>
+                                    {Carddata.data.map(({ url, title, username, userdesc, userphoto, leftprice, rightprice }) => (
+                                        <Grid.Col xs={12} sm={6} md={4} lg={4}>
+                                            <Wrapper className="cart-item" onMouseOver={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #3800B0;');
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: visible');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: visible');
+
+                                            }} onMouseOut={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #EBE5F7;')
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: hidden');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: hidden');
+                                            }}>
+                                                <div className="image-container">
+                                                    <button className='congralute-button'>Congralute</button>
+                                                    <div className="image-background"></div>
+                                                    <ImgWrapper src={url}></ImgWrapper>
+                                                </div>
+                                                <ContentWrapper>
+                                                    <Title>{title}</Title>
+
+                                                    <UserWrapper>
+                                                        <UserAbout>
+                                                            <UserName>{username}</UserName>
+                                                            <UserDesc>{userdesc}</UserDesc>
+                                                        </UserAbout>
+                                                        <UserPhoto src={userphoto}></UserPhoto>
+                                                    </UserWrapper>
+
+                                                    <PriceWrapper>
+                                                        <ProgressWrapper>
+                                                            <Progress size="sm" sections={[{ value: 50, color: "#3800B0" }]} />
+                                                        </ProgressWrapper>
+                                                        <Prices>
+                                                            <LeftPrice>{leftprice}</LeftPrice>
+                                                            <RightPrice>{rightprice}</RightPrice>
+                                                        </Prices>
+                                                    </PriceWrapper>
+                                                </ContentWrapper>
+                                            </Wrapper>
+                                        </Grid.Col>
+                                    ))}
+                                </Grid>
                             </TabPanel>
                             <TabPanel>
                                 <h2>Any content 2</h2>
+
+                                <Grid>
+                                    {Carddata.data.map(({ url, title, username, userdesc, userphoto, leftprice, rightprice }) => (
+                                        <Grid.Col xs={12} sm={6} md={3} lg={3}>
+                                            <Wrapper className="cart-item" onMouseOver={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #3800B0;');
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: visible');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: visible');
+
+                                            }} onMouseOut={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #EBE5F7;')
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: hidden');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: hidden');
+                                            }}>
+                                                <div className="image-container">
+                                                    <button className='congralute-button'>Congralute</button>
+                                                    <div className="image-background"></div>
+                                                    <ImgWrapper src={url}></ImgWrapper>
+                                                </div>
+                                                <ContentWrapper>
+                                                    <Title>{title}</Title>
+
+                                                    <UserWrapper>
+                                                        <UserAbout>
+                                                            <UserName>{username}</UserName>
+                                                            <UserDesc>{userdesc}</UserDesc>
+                                                        </UserAbout>
+                                                        <UserPhoto src={userphoto}></UserPhoto>
+                                                    </UserWrapper>
+
+                                                    <PriceWrapper>
+                                                        <ProgressWrapper>
+                                                            <Progress size="sm" sections={[{ value: 50, color: "#3800B0" }]} />
+                                                        </ProgressWrapper>
+                                                        <Prices>
+                                                            <LeftPrice>{leftprice}</LeftPrice>
+                                                            <RightPrice>{rightprice}</RightPrice>
+                                                        </Prices>
+                                                    </PriceWrapper>
+                                                </ContentWrapper>
+                                            </Wrapper>
+                                        </Grid.Col>
+                                    ))}
+                                </Grid>
                             </TabPanel>
                             <TabPanel>
                                 <h2>Any content 3</h2>
+
+                                <Grid>
+                                    {Carddata.data.map(({ url, title, username, userdesc, userphoto, leftprice, rightprice }) => (
+                                        <Grid.Col xs={12} sm={6} md={3} lg={3}>
+                                            <Wrapper className="cart-item" onMouseOver={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #3800B0;');
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: visible');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: visible');
+
+                                            }} onMouseOut={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #EBE5F7;')
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: hidden');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: hidden');
+                                            }}>
+                                                <div className="image-container">
+                                                    <button className='congralute-button'>Congralute</button>
+                                                    <div className="image-background"></div>
+                                                    <ImgWrapper src={url}></ImgWrapper>
+                                                </div>
+                                                <ContentWrapper>
+                                                    <Title>{title}</Title>
+
+                                                    <UserWrapper>
+                                                        <UserAbout>
+                                                            <UserName>{username}</UserName>
+                                                            <UserDesc>{userdesc}</UserDesc>
+                                                        </UserAbout>
+                                                        <UserPhoto src={userphoto}></UserPhoto>
+                                                    </UserWrapper>
+
+                                                    <PriceWrapper>
+                                                        <ProgressWrapper>
+                                                            <Progress size="sm" sections={[{ value: 50, color: "#3800B0" }]} />
+                                                        </ProgressWrapper>
+                                                        <Prices>
+                                                            <LeftPrice>{leftprice}</LeftPrice>
+                                                            <RightPrice>{rightprice}</RightPrice>
+                                                        </Prices>
+                                                    </PriceWrapper>
+                                                </ContentWrapper>
+                                            </Wrapper>
+                                        </Grid.Col>
+                                    ))}
+                                </Grid>
                             </TabPanel>
                         </Tabs>
                     </Grid.Col>

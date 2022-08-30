@@ -3,12 +3,18 @@ import styled from "styled-components";
 
 export const BlogMainSection = styled(Container) `
     padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 130px;
-
+    padding-left: 100px;
+    padding-right: 100px;
+    @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    
     .instruction h2 {
         font-size: 50px;
         font-weight: 600;
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){font-size: 40px;}
     }
 
     .instruction p {
@@ -35,11 +41,28 @@ export const ButtonSection = styled(Grid) `
     padding-top:30px;
     display: flex;
     padding-bottom: 30px;
+
+    @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        flex-direction: column-reverse;
+        gap: 18px;
+        padding-bottom: 50px;
+    }
     
     .btn-section {
+        width: 44%;
         border: 2px solid rgb(229 228 228);
         border-radius:13px;
-        padding-right: 25px;
+        display: flex;
+        overflow: scroll;
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){width:102%}
+
+        @media screen and (min-width: ${({ theme }) => theme.breakPoints.temp}) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: ${({ theme }) => theme.breakPoints.temp}) {
+            width: 100%;
+        }
     }
 
     .all-btn {
@@ -67,10 +90,23 @@ export const ButtonSection = styled(Grid) `
         text-transform: capitalize;
     }
 
+    .input-section{
+        @media screen and (min-width: ${({ theme }) => theme.breakPoints.temp}) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: ${({ theme }) => theme.breakPoints.temp}) {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
     .inp-sect {
-        width: 232%;
+        width: 235%;
         padding: 8px;
-        margin-left: 7px;
+        margin-left: 30px;
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){margin-left:0px;width: 100%; padding: 0px;}
     }
 
 `
@@ -131,6 +167,8 @@ export const BlogCard = styled(Container) `
 
     .text-card {
         font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 15px;
     }
 
     .read-article {
@@ -148,4 +186,9 @@ export const PaginationSection = styled(Container) `
     justify-content: center;
     padding-bottom: 70px;
     padding-top: 50px;
+
+    @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 `

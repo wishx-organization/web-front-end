@@ -3,12 +3,28 @@ import styled from "styled-components";
 
 export const BlogMainSection = styled(Container) `
     padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 130px;
+    
+    @media screen and (min-width: ${({ theme }) => theme.breakPoints.temp}) {
+        width: 80%;
+    }
 
     .instruction h2 {
         font-size: 50px;
         font-weight: 600;
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            font-size: 40px;
+        }
+        
+        @media screen and (min-width: ${({ theme }) => theme.breakPoints.temp}) {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width: ${({ theme }) => theme.breakPoints.temp}) {
+            font-size: 30px;
+            font-weight: 600;
+        }
     }
 
     .instruction p {
@@ -94,6 +110,8 @@ export const BlogCard = styled(Container) `
 
     .text-card {
         font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 15px;
     }
 
     .read-article {

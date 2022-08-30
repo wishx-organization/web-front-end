@@ -22,15 +22,15 @@ const BlogCategory = () => {
             </div>
             <ButtonSection>
                 <div className='btn-section'>
-                    <Button className='other-btn-th'>All</Button>
-                    <Button className='all-btn'>Travel</Button>
+                    <Button className='all-btn'>All</Button>
+                    <Button className='other-btn'>Travel</Button>
                     <Button className='other-btn'>Sport</Button>
                     <Button className='other-btn'>Gadgets</Button>
                     <Button className='other-btn'>Foto {'&'} Video</Button>
                     <Button className='other-btn'>Clothes</Button>
                 </div>
                 <div className='input-section' style={{ height: "50px" }}>
-                    <CustomInput className='inp-sect' placeholder='Search by all blog articles' />
+                    <CustomInput height={200} className='inp-sect' placeholder='Search by all blog articles' />
                 </div>
             </ButtonSection>
 

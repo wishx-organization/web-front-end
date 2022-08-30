@@ -12,8 +12,10 @@ export const SettingSection = styled(Container)`
 
     .setting-txt {
         color: #0B0023;
-        font-size: 56px;
+        font-size: 43px;
         padding-bottom: 70px;
+        font-weight: 600;
+        padding-top: 15px;
     }
 
     .save-btn {

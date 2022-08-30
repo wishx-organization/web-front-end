@@ -32,12 +32,12 @@ const MainBlog = () => {
                     <Button className='other-btn'>Clothes</Button>
                 </div>
                 <div className='input-section' style={{ height: "50px" }}>
-                    <CustomInput className='inp-sect' placeholder='Search by all blog articles' />
+                    <CustomInput height={200} className='inp-sect' placeholder='Search by all blog articles' />
                 </div>
             </ButtonSection>
             <CardTopSection fluid>
-                <Grid>
-                    <Grid.Col p={0} span={6}>
+                <Grid className='grid-root'>
+                    <Grid.Col className='col-root-img' p={0} span={6}>
                         <Image className='img-section' src={mountn} />
                     </Grid.Col>
                     <Grid.Col span={6}>
@@ -54,37 +54,37 @@ const MainBlog = () => {
                 </Grid>
             </CardTopSection>
 
-            <BlogCard fluid>
-                <Grid>
-                    {BlogDataCard.data.map(({ foto, date, category, title, text }) => (
-                        <Grid.Col xs={12} sm={6} md={4} lg={4}>
-                            <Card sx={{ maxWidth: 600 }} style={{ boxShadow: "none" }} >
-                                <CardActionArea>
-                                    <CardMedia
-                                        component="img"
-                                        image={foto}
-                                        height="230px"
-                                        style={{ borderRadius: "20px" }}
-                                    />
-                                    <CardContent style={{padding: "0", paddingTop:"20px"}}>
-                                        <Typography gutterBottom variant="h5" component="div">
-                                            <p className='date-category'>{date} - {category}</p>
-                                        </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            <h1 className='title-card'>{title}</h1>
-                                            <p className='text-card'>{text}</p>
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                                <CardActions className="p-0">
-                                    <a href="#" className="read-article">Read article</a>
-                                </CardActions>
-                            </Card>
-                        </Grid.Col>
-                    ))}
-                </Grid>
+                <BlogCard fluid>
+                    <Grid className='grid-card-root'>
+                        {BlogDataCard.data.map(({ foto, date, category, title, text }) => (
+                            <Grid.Col xs={12} sm={6} md={4} lg={4}>
+                                <Card sx={{ maxWidth: 600 }} style={{ boxShadow: "none" }} >
+                                    <CardActionArea>
+                                        <CardMedia
+                                            component="img"
+                                            image={foto}
+                                            height="230px"
+                                            style={{ borderRadius: "20px" }}
+                                        />
+                                        <CardContent style={{padding: "0", paddingTop:"20px"}}>
+                                            <Typography gutterBottom variant="h5" component="div">
+                                                <p className='date-category'>{date} - {category}</p>
+                                            </Typography>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <h1 className='title-card'>{title}</h1>
+                                                <p className='text-card'>{text}</p>
+                                            </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions className="p-0">
+                                        <a href="#" className="read-article">Read article</a>
+                                    </CardActions>
+                                </Card>
+                            </Grid.Col>
+                        ))}
+                    </Grid>
 
-            </BlogCard>
+                </BlogCard>
             <PaginationSection>
                 <Stack spacing={2}>
                     <Pagination

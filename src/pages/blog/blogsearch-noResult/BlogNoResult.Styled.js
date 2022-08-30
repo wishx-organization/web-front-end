@@ -3,12 +3,49 @@ import styled from "styled-components";
 
 export const BlogMainSection = styled(Container) `
     padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 130px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .input-col-root {
+        padding: 0px;
+    }
+    
+    @media screen and (min-width: ${({ theme }) => theme.breakPoints.temp}) {
+        width: 80%;
+    }
+
+    .mantine-nsdj {
+        margin: 0;
+    }
+
+    .mantine-15pjuqq{
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
 
     .instruction h2 {
-        font-size: 50px;
-        font-weight: 600;
+        font-size: 56px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        @media screen and (min-width: ${({ theme }) => theme.breakPoints.temp}) {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            font-size: 40px;
+        }
+
+        @media screen and (max-width: ${({ theme }) => theme.breakPoints.temp}) {
+            font-size: 30px;
+            font-weight: 600;
+        }
     }
 
     .instruction p {
@@ -16,6 +53,7 @@ export const BlogMainSection = styled(Container) `
         padding-bottom: 10px;
         font-size: 13px;
     }
+
     .img-section {
         object-fit: cover;
         width: 98%;
@@ -32,8 +70,8 @@ export const BlogMainSection = styled(Container) `
 
     .txt-section {
         color: #0B0023;
-        font-size: 35px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 600;
         padding-bottom: 30px;
     }
 `
@@ -58,7 +96,10 @@ export const BlogCard = styled(Container) `
 
     .text-card {
         font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 15px;
     }
+
     .read-article {
         color: #3800B0 !important;
         font-size: 14px;
@@ -66,6 +107,10 @@ export const BlogCard = styled(Container) `
         margin: 0;
         text-decoration: none;
         font-weight: 600;
+    }
+
+    .cart-item{
+
     }
 `
 

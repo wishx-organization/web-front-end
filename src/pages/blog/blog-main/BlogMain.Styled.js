@@ -4,11 +4,49 @@ import styled from "styled-components";
 export const BlogMainSection = styled(Container) `
     padding-top: 50px;
     padding-left: 150px;
+    overflow-x: hidden;
     padding-right: 130px;
+
+    .grid-card-root {
+        margin:0px;
+    }
+
+    .grid-root {
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            display: block;
+        }
+    }
+
+    .col-root-img {
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            max-width: 97.6%;
+        }
+
+        @media (min-width: 355px) and (max-width: 370px) {
+            max-width: 97.7%;
+        }
+        @media (min-width: 370px) and (max-width: 390px) {
+            max-width: 97.8%;
+        }
+        @media (min-width: 390px) and (max-width: 400px) {
+            max-width: 97.9%;
+        }
+        @media (min-width: 400px) and (max-width: 431px) {
+            max-width: 98.2%;
+        }
+    }
+
+    @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        padding-left:15px;
+        padding-right:0px;
+    }
 
     .instruction h2 {
         font-size: 50px;
         font-weight: 600;
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            font-size: 40px;
+        }
     }
 
     .instruction p {
@@ -21,6 +59,10 @@ export const BlogMainSection = styled(Container) `
         width: 98%;
         height: auto;
         margin-left: 8px;
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+
+        }
     }
 
     .Mui-selected {
@@ -35,11 +77,26 @@ export const ButtonSection = styled(Grid) `
     padding-top:30px;
     display: flex;
     padding-bottom: 100px;
+
+    @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        flex-direction: column-reverse;
+        gap: 18px;
+        padding-bottom: 50px;
+    }
     
     .btn-section {
         border: 2px solid rgb(229 228 228);
         border-radius:13px;
         padding-right: 35px;
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            display: flex;
+            overflow: scroll;
+            width: 102%;
+            padding-right: 35px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
     }
 
     .all-btn {
@@ -60,12 +117,22 @@ export const ButtonSection = styled(Grid) `
         border-bottom-right-radius: 10px;
         margin-left: 25px;
         text-transform: capitalize;
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            margin-left: 33px;
+        }
     }
 
     .inp-sect {
         width: 232%;
         padding: 8px;
         margin-left: 7px;
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            width: 98%;
+            padding: 0px; 
+            margin-left: 0px;
+        }
     }
 
 `
@@ -74,6 +141,7 @@ export const CardTopSection = styled(Container) `
     background: #0B0023;
     border-radius: 20px;
     padding: 0px !important;
+
     
 
     .mantine-Image-image {
@@ -85,12 +153,26 @@ export const CardTopSection = styled(Container) `
         font-size: 45px;
         color: white;
         font-weight: 600;
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            width: 197%;
+            font-size: 21px;
+        }
     }
 
     .txt {
         font-size: 16px;
         color: #EBE5F7;
         padding-top: 10px;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            font-size: 15px;
+            color: #EBE5F7;
+            width: 231%;
+            padding-right: 25px;
+            padding-top: 10px;
+        }
     }
 
     .top-txt {
@@ -109,6 +191,10 @@ export const CardTopSection = styled(Container) `
     .read-section {
         padding-top:20px;
         padding-left: 30px;
+        
+        @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+            padding-left: 15px;
+        }
     }
 `
 
@@ -130,6 +216,8 @@ export const BlogCard = styled(Container) `
     }
 
     .text-card {
+        padding-bottom: 15px;
+        padding-top: 10px;
         font-size: 16px;
     }
 
@@ -148,4 +236,15 @@ export const PaginationSection = styled(Container) `
     justify-content: center;
     padding-bottom: 70px;
     padding-top: 50px;
+
+    @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 `
+
+
+
+
+
+

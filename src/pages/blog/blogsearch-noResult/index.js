@@ -16,10 +16,9 @@ const BlogSRNotFound = () => {
             <div className='instruction'>
                 <p>Main {">"} Blog {">"} Search results</p>
                 <h2>Search results</h2>
-            </div>
-            
+            </div>   
             <Grid>
-                <Grid.Col span={12}>
+                <Grid.Col className='input-col-root' span={12}>
                     <CustomInput className='inp-sect' placeholder='Coca-cola' />
                 </Grid.Col>
             </Grid>
@@ -37,7 +36,7 @@ const BlogSRNotFound = () => {
                 <Grid>
                     {BlogOtherPosts.data.map(({ foto, date, category, title, text }) => (
                         <Grid.Col xs={12} sm={6} md={4} lg={4}>
-                            <Card sx={{ maxWidth: 600 }} style={{ boxShadow: "none" }} >
+                            <Card sx={{ maxWidth: 600 }} style={{ boxShadow: "none" }} className="cart-item">
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"

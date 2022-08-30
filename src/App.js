@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from "styled-components";
 import { theme } from './style/theme'
 import GlobalStyle from './style/global';
-import HowItWorks from "./pages/how-it-works";
 import Home from "./pages/home";
 import Privacy from "./pages/privacy";
 import Contact from "./pages/contact";
@@ -32,7 +31,6 @@ const App = () => {
           <Route path="/blog-search-result" element={<BlogSearchResult/>} />
           <Route path="/blog-category" element={<BlogCategory/>} />
           <Route path="/main-blog" element={<MainBlog />} />
-          <Route path="/howitworks" element={<HowItWorks />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/404" element={<ErrorPage />} />
           <Route path="/faq" element={<FaqPage />} />

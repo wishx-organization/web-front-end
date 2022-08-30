@@ -12,7 +12,7 @@ const SettingsPage = () => {
                 <h1 className="setting-txt">Settings</h1>
             </div>
 
-            <NativeSelect
+            <NativeSelect style={{fontFamily: 'Steppe'}}
                 label="Service language"
                 placeholder="Service language"
                 data={['English', 'Turkish', 'Azerbaijan']}
@@ -20,6 +20,7 @@ const SettingsPage = () => {
                 rightSectionWidth={40}
             />
             <NativeSelect pt={20}
+            style={{fontFamily: 'Steppe'}}
                 label="Timezone"
                 placeholder="UTC+4:00"
                 data={['UTC+4:00']}
@@ -27,6 +28,7 @@ const SettingsPage = () => {
                 rightSectionWidth={40}
             />
             <NativeSelect pt={20}
+            style={{fontFamily: 'Steppe'}}
                 label="Date format"
                 placeholder="DD:MM:YYYY"
                 data={['DD:MM:YYYY']}
@@ -34,8 +36,8 @@ const SettingsPage = () => {
                 rightSectionWidth={40}
             />
 
-            <div style={{ width: 468 }} className="pt-4">
-                <Button style={{background: "#3800B0", color: "white", height: "50px", borderRadius: "10px"}} fullWidth variant="outline">
+            <div style={{ width: "100%" }} className="pt-4">
+                <Button style={{background: "#3800B0", color: "white", height: "50px", borderRadius: "10px", fontFamily: 'Steppe !important'}} fullWidth variant="outline">
                     Save
                 </Button>
             </div>
