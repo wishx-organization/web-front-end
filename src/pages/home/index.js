@@ -122,7 +122,6 @@ const Home = () => {
       else {
         counter_top = 0;
       }
-
       if (counter_bottom < 3) {
         ++counter_bottom;
       }
