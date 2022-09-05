@@ -10,6 +10,26 @@ export const Seconddiv = styled.div`
     margin:-210px 25px 0 0;
     display: block;
 
+    @media (min-width: 1200px) and (max-width: 1300px) {
+        margin: -210px 12px 0 0;
+    }
+
+    @media (min-width: 1300px) and (max-width: 1400px) {
+        margin: -210px 17px 0 0;
+    }
+
+    @media (min-width: 1400px) and (max-width: 1500px) {
+        margin: -210px 17px 0 0;
+    }
+
+    @media (min-width: 1500px) and (max-width: 1600px) {
+        margin: -210px 2px 0 0;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1700px) {
+        margin: -210px -29px 0 0;
+    }
+
     @media (max-width: 420px) {
         display: block;
     }
@@ -36,12 +56,39 @@ export const Lastdiv = styled.div`
     display: block;
     background: #2D008D;
     border-radius: 8px;
+    
+    @media (min-width: 1200px) and (max-width: 1300px) {
+        margin: 50px 105px 0 20px;
+        width: 351px;
+    }
+
+    @media (min-width: 1300px) and (max-width: 1400px) {
+        margin: 50px 57px 0 20px;
+        width: 395px;
+    }
+
+    @media (min-width: 1400px) and (max-width: 1500px) {
+        margin: 50px 57px 0 20px;
+        width: 395px;
+    }
+
+    @media (min-width: 1500px) and (max-width: 1600px) {
+        margin: 50px -19px 0 20px;
+        width: 470px;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1700px) {
+        margin: 50px 3px 0 20px;
+    }
+    
 
     .star-card {
         @media (max-width: 420px) {
             margin: 8px 0px 0px 16px !important;
         }
     }
+
+
 
     @media (max-width: 420px) {
         width: 171px;
@@ -52,6 +99,73 @@ export const Lastdiv = styled.div`
         background: #2D008D;
         border-radius: 8px;
     }
+
+    @media (min-width: 375px) and (max-width: 377px) {
+        margin: 155px -1px 0px 13px;
+       }
+       @media (min-width: 377px) and (max-width: 379px) {
+        margin: 155px -1px 0px 13px;
+       }
+       @media (min-width: 379px) and (max-width: 381px) {
+        margin: 155px 1px 0px 13px;
+       }
+       @media (min-width: 381px) and (max-width: 383px) {
+        margin: 155px 4px 0px 13px;
+       }
+       @media (min-width: 383px) and (max-width: 385px) {
+        margin: 155px 5px 0px 13px;
+       }
+       @media (min-width: 385px) and (max-width: 387px) {
+        margin: 155px 9px 0px 13px;
+       }
+       @media (min-width: 387px) and (max-width: 389px) {
+        margin: 155px 10px 0px 13px;
+       }
+       @media (min-width: 389px) and (max-width: 391px) {
+        margin: 155px 12px 0px 13px;
+       }
+       @media (min-width: 391px) and (max-width: 393px) {
+        margin: 155px 13px 0px 13px;
+       }
+       @media (min-width: 393px) and (max-width: 395px) {
+        margin: 155px 16px 0px 13px;
+       }
+       @media (min-width: 395px) and (max-width: 397px) {
+        margin: 155px 18px 0px 13px;
+       }
+       @media (min-width: 397px) and (max-width: 399px) {
+        margin: 155px 20px 0px 13px;
+       }
+       @media (min-width: 399px) and (max-width: 401px) {
+        margin: 155px 21px 0px 13px;
+       }
+       @media (min-width: 401px) and (max-width: 403px) {
+        margin: 155px 22px 0px 13px;
+       }
+       @media (min-width: 403px) and (max-width: 405px) {
+        margin: 155px 26px 0px 13px;
+       }
+       @media (min-width: 405px) and (max-width: 407px) {
+        margin: 155px 28px 0px 13px;
+       }
+       @media (min-width: 407px) and (max-width: 409px) {
+        margin: 155px 29px 0px 13px;
+       }
+       @media (min-width: 409px) and (max-width: 411px) {
+        margin: 155px 31px 0px 13px;
+       }
+       @media (min-width: 411px) and (max-width: 413px) {
+        margin: 155px 34px 0px 13px;
+       }
+       @media (min-width: 413px) and (max-width: 415px) {
+        margin: 155px 35px 0px 13px;
+       }
+       @media (min-width: 415px) and (max-width: 417px) {
+        margin: 155px 37px 0px 13px;
+       }
+       @media (min-width: 417px) and (max-width: 420px) {
+        margin: 155px 41px 0px 13px;
+       }
 
 `;
 export const Targets = styled.p`
@@ -97,10 +211,10 @@ export const CardSecond = styled.div`
     border: 1px solid #EBE5F7;
     border-radius: 24px;
     @media(max-width: 480px){
-        width: 343px;
+        width: 150%;
         height: 240px;
         border-radius: 16px;
-        margin: 16px 16px 0 16px;
+        margin: 16px 16px 0 5px;
     }
 `;
 export const Hood = styled.div`
@@ -110,7 +224,7 @@ export const Hood = styled.div`
     float: left;
 
     @media(max-width: 480px){
-        width: 300px;
+        width: 91%;
         height: 62px;
         border-radius: 16px;
         margin: 16px 16px 0 16px;
@@ -192,7 +306,7 @@ export const Third = styled.div`
     height: 24px;
     float: left;
     @media(max-width: 480px){
-        width: 334px;
+        width: 85%;
         height: 71px;
         border-radius: 16px;
         margin: 16px 16px 0 26px;
@@ -206,7 +320,7 @@ export const Pass = styled.a`
     font-size: 12px;  
 
     @media(max-width: 480px){
-        margin-right: 45px;
+        margin-right: -10px;
         margin-top: 40px; 
     }
 `;
@@ -399,7 +513,7 @@ export const Paragrap = styled.p`
     @media (max-width: 480px){
         display: block;
         margin-top: 40px;
-        margin-left: 7px;
+        margin-left: -4px;
     }
 `;
 

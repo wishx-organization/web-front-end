@@ -1,6 +1,10 @@
-import { Container, Grid, Image, Button, Slider } from '@mantine/core';
+import { Container, Grid, Image, Button, Slider, Progress } from '@mantine/core';
+import '../home/Home.Styled'
+import { Prices } from '../../shared/components/home/homeCard/HomeCard.styled';
+import { Wrapper, ImgWrapper, Title, ContentWrapper, UserWrapper, UserAbout, UserName, UserPhoto, PriceWrapper, ProgressWrapper } from '../../shared/components/home/homeCard/HomeCard.styled';
 import React from "react";
-import { Body, ButtonSection, DateSection, LeftSection, CardLong, FollowersSection, Follower, Following, Details, Edit, Final, Date, DateText, Text, TagName, Firstprice, Namesurname, Imagess, LastDiv, Lastprice, Price, SosialN, Target, TargetFinal, Title, SocialSection, Joined, UserDesc, LeftRightPriceDisplay, LeftPrice, RightPrice, MenuScrollCards, DisplayDateBirthaySection, MobileBtnSection, FotoSection, MenuScrollCardsDesktop } from './MyProfile.style'
+import { Body, ButtonSection, DateSection, LeftSection, CardLong, FollowersSection, Follower, Following, Details, Edit, Final, Date, DateText, Text, TagName, Firstprice, Namesurname, Imagess, LastDiv, Lastprice, Price, SosialN, Target, TargetFinal, SocialSection, Joined, UserDesc, LeftRightPriceDisplay, LeftPrice, RightPrice, MenuScrollCards, DisplayDateBirthaySection, MobileBtnSection, FotoSection, AlertImage, AlertText, Buttondiv, RaisedText, TargetText, AlertTextDesktop } from './Oup.Style'
+import rainbow from './../../style/icons/rainbowfoto.png'
 import estetika from '../../style/icons/estetika.png'
 import tomcruse from '../../style/icons/tomcruse.png'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -10,16 +14,18 @@ import { FaTelegram } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
 import { RiLinksFill } from 'react-icons/ri';
 import { HiBadgeCheck, HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
-import { Lastdiv, Seconddiv, Views, Targets, Raised, CardSecond, Hood, Parag, Photo, Person, Parags, Titles, Third, Pass, CardLonger, NotWishes, Division, Maybe, Picture, Name, Tag, Buttons, Buttonleft, Buttonright, Glasses, DisplayOnButtonText, DisplayUsernameText, DisplayBirthdaytext, DisplayTime, DisplayTitle, DisplayTextToTheWish, DisplayCountLike, DisplayButtonTheWish, Paragraf, Paragrap, DisplayTopText, DisplayTopImgCard } from './MyprofilSecond.style';
+import alertimg from '../../style/icons/alert.png'
+import { Lastdiv, Seconddiv, Views, Targets, Raised, CardSecond, Hood, Parag, Photo, Person, Parags, Titles, Third, Pass, CardLonger, NotWishes, Division, Maybe, Picture, Name, Tag, Buttons, Buttonleft, Buttonright, Glasses, DisplayOnButtonText, DisplayUsernameText, DisplayBirthdaytext, DisplayTime, DisplayTitle, DisplayTextToTheWish, DisplayCountLike, DisplayButtonTheWish, Paragraf, Paragrap, DisplayTopText, DisplayTopImgCard } from './Oup.Style';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FiAlertTriangle } from "react-icons/fi";
 import file1 from "../../style/icons/file1.png"
 import { Component } from 'react';
 
-class MyProfile extends Component {
+class OtherUserProfile extends Component {
     constructor(props) {
         super(props)
         this.state = { matches: window.matchMedia("(min-width: 500px)").matches };
@@ -33,8 +39,8 @@ class MyProfile extends Component {
         return (
             <Body>
                 <FotoSection fluid>
-                    {this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={estetika} height={300} />}
-                    {!this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={estetika} height={200} />}
+                    {this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={rainbow} height={300} />}
+                    {!this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={rainbow} height={200} />}
 
                 </FotoSection>
                 <Grid className='main-grid'>
@@ -70,14 +76,18 @@ class MyProfile extends Component {
                                 <Button className='second-btn'>Edit</Button>
                             </ButtonSection>
                             <MobileBtnSection>
+                                <Button className='follow-btn'>Follow</Button>
                                 <Button className='mobile-btn'>Edit profile</Button>
                                 <BsFacebook className='fb-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
                                 <BsInstagram className='insta-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
                                 <BsTelegram className='insta-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
                             </MobileBtnSection>
-                            <Joined>Joined November 2021</Joined>
+                            <Joined>Joined November 2021 </Joined>
+                            <AlertText><FiAlertTriangle className='report-img' />Report</AlertText>
+
                         </LeftSection>
                     </Grid.Col>
+
                     <Grid.Col span={8}>
                         <Tabs defaultValue="com">
                             <MenuScrollCards>
@@ -95,145 +105,130 @@ class MyProfile extends Component {
                                     </div>
                                 </MenuScrollCards> */}
                             <TabPanel value="act">
-                                {
-                                    (Carddata.data) ? (Carddata.data.map((index) => (
+                                <Grid className='grid-root-active-wishes'>
+                                    {(Carddata.data) ? (Carddata.data.map(({ url, title, username, userdesc, userphoto, leftprice, rightprice }) => (
 
-                                        <CardLong id={index.id}>
-                                            <div className='cont-text'>
-                                                <Imagess src={index.url} />
-                                                <Title>{index.title}</Title>
-                                                <TargetFinal><Target>Target: $10000</Target><Final>Final: 25.10.2022</Final></TargetFinal>
-                                                <UserDesc>{index.userdesc}</UserDesc>
-                                                <Slider className='loading' defaultValue={17} disabled />
-                                                <LeftRightPriceDisplay>
-                                                    <LeftPrice>{index.leftprice}</LeftPrice>
-                                                    <RightPrice>{index.rightprice}</RightPrice>
-                                                </LeftRightPriceDisplay>
-                                                <Price><Firstprice>{index.leftprice}</Firstprice><Lastprice>{index.rightprice}</Lastprice></Price>
-                                                <LastDiv>
-                                                    <SosialN>Share
-                                                        <a href='#'>
-                                                            <BsFacebook className='Facebook' />
-                                                        </a>
-                                                        <a href='#'>
-                                                            <BsTwitter className='twitter' />
-                                                        </a>
-                                                        <a href='#'>
-                                                            <FaTelegram className='telegram' />
-                                                        </a>
-                                                        <a href='#'>
-                                                            <BsWhatsapp className='whatsapp' />
-                                                        </a>
-                                                        <a href='#'>
-                                                            <IoMailOutline className='mail' />
-                                                        </a>
-                                                        <a href='#'>
-                                                            <RiLinksFill className='link' />
-                                                        </a>
-                                                    </SosialN>
-                                                    <Edit>Edit</Edit>
-                                                    <Details>Details</Details>
-                                                </LastDiv>
-                                            </div>
-                                        </CardLong>
+                                        <Grid.Col className='col-root-cards' xs={2} sm={2} md={4} lg={4}>
+                                            <Wrapper className="cart-item" onMouseOver={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #3800B0;');
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: visible');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: visible');
+
+                                            }} onMouseOut={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #EBE5F7;')
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: hidden');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: hidden');
+                                            }}>
+                                                {/* <div className="image-container"> */}
+                                                {/* <button className='congralute-button'>Congralute</button> */}
+                                                {/* <div className="image-background"></div> */}
+                                                <ImgWrapper src={url}></ImgWrapper>
+                                                {/* </div> */}
+                                                <ContentWrapper>
+                                                    <Title>{title}</Title>
+
+                                                    <UserWrapper>
+                                                        <UserAbout>
+                                                            <UserName>{username}</UserName>
+                                                            <UserDesc style={{ display: 'none' }}>{userdesc}</UserDesc>
+                                                        </UserAbout>
+                                                        <UserPhoto src={userphoto}></UserPhoto>
+                                                    </UserWrapper>
+
+                                                    <PriceWrapper>
+                                                        <ProgressWrapper>
+                                                            <Progress size="sm" sections={[{ value: 50, color: "#3800B0" }]} />
+                                                        </ProgressWrapper>
+                                                        <Prices>
+                                                            <LeftPrice>{leftprice}</LeftPrice>
+                                                            <RightPrice>{rightprice}</RightPrice>
+                                                        </Prices>
+                                                    </PriceWrapper>
+                                                </ContentWrapper>
+                                            </Wrapper>
+                                        </Grid.Col>
                                     ))) :
+
                                         (<div>
                                             <CardLonger>
-                                                <NotWishes>Yo don’t have any wishes</NotWishes>
+                                                <NotWishes>User doesn’t have any wishes</NotWishes>
                                                 <Buttons>
                                                     <Buttonleft>Create a wish</Buttonleft>
                                                     <Buttonright>Explore wishes</Buttonright>
                                                 </Buttons>
                                                 <Glasses src={file1} />
                                             </CardLonger>
-                                            <Division>
-                                                <Maybe>Maybe you know  <HiArrowNarrowRight style={{ float: "right", fontSize: "20px", color: "#3800B0" }} /><HiArrowNarrowLeft style={{ float: "right", fontSize: "20px", color: "#3800B0" }} /></Maybe>
-                                                <Swiper
-                                                    slidesPerView={4.5}
-                                                    spaceBetween={16}
-                                                    slidesPerGroup={5}
-                                                    loop={true}
-                                                    loopFillGroupWithBlank={true}
-                                                    modules={[Pagination, Navigation]}
-                                                    className="mySwiper"
-                                                >
-                                                    {
-                                                        Carddata.popular.map((index) => (
-                                                            <SwiperSlide>
-                                                                <Picture src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5ODc1NTM4NjMyOTc2Mzcz/gettyimages-693134468.jpg" />
-                                                                <Name>{index.title}<HiBadgeCheck style={{ color: "blue", margin: "2px 0 0 5px", float: "right" }} /></Name>
-                                                                <Tag>{index.time}</Tag>
-                                                            </SwiperSlide>
-                                                        ))
-                                                    }
-
-                                                </Swiper>
-                                            </Division>
                                         </div>
-                                        )
+                                        )}
+                                </Grid>
 
-                                }
                             </TabPanel>
+
                             <TabPanel value="com">
-                                {
-                                    (Carddata.data) ? (Carddata.data.map((index) => (
+                                <Grid className='grid-root-active-wishes'>
+                                    {(Carddata.data) ? (Carddata.data.map(({ url, title, username, userdesc, userphoto, leftprice, rightprice }) => (
 
-                                        <CardLong id={index.id}>
-                                            <div className='com-cont'>
-                                                <Imagess src={index.url} />
-                                                <Title>{index.title}</Title>
-                                                <Seconddiv>
-                                                    <Views>256 <br /><p style={{ fontSize: "12px", marginTop: "-7px" }}>Views</p></Views>
-                                                    <Views>8<br /><p style={{ fontSize: "12px", marginTop: "-7px" }}>Gifts</p></Views>
-                                                    <Views>$12 <br /><p style={{ fontSize: "12px", marginTop: "-7px" }}>Avg gift amount</p></Views>
-                                                    <Lastdiv>
-                                                        <span className='star-card' style={{ float: "left", fontSize: "20px", margin: "16px 0 0 16px" }}>✨</span>
-                                                        <Raised>$2 542 raised</Raised>
-                                                        <Targets>120%  of $2 000 target</Targets>
-                                                    </Lastdiv>
-                                                </Seconddiv>
-                                                <DisplayOnButtonText>for birthday on 25 Nov 2022</DisplayOnButtonText>
-                                            </div>
-                                        </CardLong>
+                                        <Grid.Col className='col-root-cards' xs={2} sm={2} md={4} lg={4}>
+                                            <Wrapper className="cart-item" onMouseOver={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #3800B0;');
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: visible');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: visible');
+
+                                            }} onMouseOut={(e) => {
+                                                e.currentTarget.setAttribute('style', 'border: 1px solid #EBE5F7;')
+                                                e.currentTarget.children[0].children[0].setAttribute('style', 'visibility: hidden');
+                                                e.currentTarget.children[0].children[1].setAttribute('style', 'visibility: hidden');
+                                            }}>
+                                                {/* <div className="image-container"> */}
+                                                {/* <button className='congralute-button'>Congralute</button> */}
+                                                {/* <div className="image-background"></div> */}
+                                                <ImgWrapper src={url}></ImgWrapper>
+                                                {/* </div> */}
+                                                <ContentWrapper>
+                                                    <Title>{title}</Title>
+
+                                                    <UserWrapper>
+                                                        <UserAbout>
+                                                            <UserName>{username}</UserName>
+                                                            <UserDesc style={{ display: 'none' }}>{userdesc}</UserDesc>
+                                                        </UserAbout>
+                                                        <UserPhoto src={userphoto}></UserPhoto>
+                                                    </UserWrapper>
+
+                                                    <PriceWrapper>
+
+                                                        <ProgressWrapper>
+                                                            <Progress style={{ display: 'none' }} size="sm" sections={[{ value: 50, color: "#3800B0" }]} />
+                                                        </ProgressWrapper>
+                                                        <Buttondiv>
+                                                            <span className='star-card' style={{ float: "left", fontSize: "20px" }}>✨</span>
+                                                            <RaisedText>$2 542 raised</RaisedText>
+                                                        </Buttondiv>
+                                                        <Prices style={{ display: 'none' }}>
+                                                            <LeftPrice>{leftprice}</LeftPrice>
+                                                            <RightPrice>{rightprice}</RightPrice>
+                                                        </Prices>
+                                                    </PriceWrapper>
+                                                </ContentWrapper>
+                                            </Wrapper>
+                                        </Grid.Col>
                                     ))) :
+
                                         (<div>
                                             <CardLonger>
-                                                <NotWishes>Yo don’t have any wishes</NotWishes>
+                                                <NotWishes>User doesn’t have any wishes</NotWishes>
                                                 <Buttons>
                                                     <Buttonleft>Create a wish</Buttonleft>
                                                     <Buttonright>Explore wishes</Buttonright>
                                                 </Buttons>
                                                 <Glasses src={file1} />
                                             </CardLonger>
-                                            <Division>
-                                                <Maybe>Maybe you know  <HiArrowNarrowRight style={{ float: "right", fontSize: "20px", color: "#3800B0" }} /><HiArrowNarrowLeft style={{ float: "right", fontSize: "20px", color: "#3800B0" }} /></Maybe>
-                                                <Swiper
-                                                    slidesPerView={4.5}
-                                                    spaceBetween={16}
-                                                    slidesPerGroup={5}
-                                                    loop={true}
-                                                    loopFillGroupWithBlank={true}
-                                                    modules={[Pagination, Navigation]}
-                                                    className="mySwiper"
-                                                >
-                                                    {
-                                                        Carddata.popular.map((index) => (
-                                                            <SwiperSlide>
-                                                                <Picture src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5ODc1NTM4NjMyOTc2Mzcz/gettyimages-693134468.jpg" />
-                                                                <Name>{index.title}<HiBadgeCheck style={{ color: "blue", margin: "2px 0 0 5px", float: "right" }} /></Name>
-                                                                <Tag>{index.time}</Tag>
-                                                            </SwiperSlide>
-                                                        ))
-                                                    }
-
-                                                </Swiper>
-                                            </Division>
+                                            
                                         </div>
-                                        )
-
-                                }
+                                        )}
+                                </Grid>
                             </TabPanel>
-                            <TabPanel value="con">
+                            {/* <TabPanel value="con">
                                 {
                                     (Carddata.data) ? (Carddata.data.map((index) => (
 
@@ -293,7 +288,7 @@ class MyProfile extends Component {
                                         )
 
                                 }
-                            </TabPanel>
+                            </TabPanel> */}
                         </Tabs>
                     </Grid.Col>
                 </Grid>
@@ -302,4 +297,4 @@ class MyProfile extends Component {
     }
 }
 
-export default MyProfile;
+export default OtherUserProfile;

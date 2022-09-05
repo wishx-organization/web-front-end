@@ -4,6 +4,39 @@ import styled from "styled-components";
 export const Body = styled.div`
 background: #E5E5E5;
 
+.grid-root-active-wishes {
+    max-width: 886px;
+    padding-top: 25px;
+
+    @media (min-width:1275px) and (max-width: 1500px) {
+        max-width: 870px;
+    }
+
+    @media (min-width:1500px) and (max-width: 1600px) {
+        max-width: 885px;
+    }
+
+    @media (min-width:1550px) and (max-width: 1600px) {
+        max-width: 890px;
+    }
+
+    @media (min-width:1600px) and (max-width: 1650px) {
+        max-width: 900px;
+    }
+
+    @media (min-width:1650px) and (max-width: 1700px) {
+        max-width: 910px;
+    }
+}
+
+.col-root-cards {
+    @media (max-width: 420px) {
+        min-width: 144%;
+        margin-left: 8px;
+        padding-top: 30px;
+    }
+}
+
 .rainbow {
     @media (min-width: 375px) and (max-width: 420px) {
         height: 200px !important;
@@ -16,6 +49,10 @@ background: #E5E5E5;
 
 .col-one {
     padding-left: 195px;
+
+    @media (min-width: 1200px) and (max-width: 1700px) {
+        padding-bottom: 40px;
+    }
 }
 
 .main-grid {
@@ -41,57 +78,78 @@ background: #E5E5E5;
     border: 1px solid #8f75bc;
     border-radius: 9px;
 
-    @media (min-width: 1200px) and (max-width: 1700px) {
-        width: 86.5%;
-    }
-
     @media (max-width: 420px) {
         overflow: scroll;
-        width: 182%;    
+        width: 95%;
+        margin-left: 9px;   
     }
 
-}
-
-.btn-sectiondesctop {
-    display: flex;
-    width: 56.5%;
-    border: 1px solid #8f75bc;
-    border-radius: 9px;
-
-    @media (min-width: 1200px) and (max-width: 1235px) {
-        width: 53%; 
+    @media (min-width: 1200px) and (max-width: 1290px) {
+        width: 98.5%;
     }
 
-    @media (min-width: 1235px) and (max-width: 1300px) {
-        width: 53.8%; 
+    @media (min-width: 1290px) and (max-width: 1325px) {
+        width: 96%;
     }
 
-    @media (min-width: 1300px) and (max-width: 1350px) {
-        width: 54.3%; 
+    @media (min-width: 1325px) and (max-width: 1380px) {
+        width: 94%;
     }
 
-    @media (min-width: 1350px) and (max-width: 1400px) {
-        width: 54.8%; 
+    @media (min-width: 1380px) and (max-width: 1405px) {
+        width: 92%;
     }
 
-    @media (min-width: 1400px) and (max-width: 1415px) {
-        width: 55%; 
+    @media (min-width: 1405px) and (max-width: 1450px) {
+        width: 92%;
     }
 
-    @media (min-width: 1400px) and (max-width: 1500px) {
-        width: 55%; 
+    @media (min-width: 1420px) and (max-width: 1450px) {
+        width: 90.5%;
     }
 
-    @media (min-width: 1550px) and (max-width: 1600px) {
-        width: 57%; 
+    @media (min-width: 1450px) and (max-width: 1480px) {
+        width:88.5%;
     }
 
-    @media (min-width: 1600px) and (max-width: 1650px) {
-        width: 58%; 
+    @media (min-width: 1480px) and (max-width: 1500px) {
+        width:88%;
     }
 
-    @media (min-width: 1650px) and (max-width: 1700px) {
-        width: 58.5%; 
+    @media (min-width: 1480px) and (max-width: 1500px) {
+        width:88%;
+    }
+
+    @media (min-width: 1500px) and (max-width: 1525px) {
+        width:87%;
+    }
+
+    @media (min-width: 1525px) and (max-width: 1550px) {
+        width:86%;
+    }
+
+    @media (min-width: 1550px) and (max-width: 1575px) {
+        width:85%;
+    }
+
+    @media (min-width: 1575px) and (max-width: 1600px) {
+        width:84%;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1630px) {
+        width:83%;
+    }
+
+    @media (min-width: 1630px) and (max-width: 1660px) {
+        width:82%;
+    }
+
+    @media (min-width: 1660px) and (max-width: 1680px) {
+        width:81%;
+    }
+    
+    @media (min-width: 1680px) and (max-width: 1700px) {
+        width:80%;
     }
 }
 
@@ -137,31 +195,6 @@ background: #E5E5E5;
     float: right;
     margin: 0;
     margin: -173px 40px 0 35px;
-
-    @media (min-width: 1200px) and (max-width: 1300px) {
-        margin: -172px 142px 0 35px;
-        width: 320px;
-    }
-
-    @media (min-width: 1300px) and (max-width: 1400px) {
-        margin: -173px 52px 0 35px;
-        width: 415px;
-    }
-
-    @media (min-width: 1400px) and (max-width: 1500px) {
-        margin: -173px 53px 0 35px;
-        width: 412px;
-    }
-
-    @media (min-width: 1500px) and (max-width: 1600px) {
-        margin: -173px 33px 0 35px;
-        width: 411px;
-    }
-
-    @media (min-width: 1600px) and (max-width: 1700px) {
-        margin: -173px -37px 0 35px;
-        width: 455px;
-    }
 }
 .mantine-vl2f9f{
     height: 4px;
@@ -247,7 +280,7 @@ background: #E5E5E5;
 
 
 .tabname {
-    width: 55%;
+    width: 58.3%;
     color: #160046;
     padding: 11px 22px;
     text-align: center;
@@ -299,80 +332,6 @@ background: #E5E5E5;
        height: 4px;
        float: right;
        margin: -46px 16px 0 0;
-
-       @media (min-width: 375px) and (max-width: 377px) {
-        margin: -48px 26px 0 0;
-       }
-       @media (min-width: 377px) and (max-width: 379px) {
-        margin: -48px 27px 0 0;
-       }
-       @media (min-width: 379px) and (max-width: 381px) {
-        margin: -48px 30px 0 0;
-       }
-       @media (min-width: 381px) and (max-width: 383px) {
-        margin: -48px 32px 0 0;
-       }
-       @media (min-width: 383px) and (max-width: 385px) {
-        margin: -48px 34px 0 0;
-       }
-       @media (min-width: 385px) and (max-width: 387px) {
-        margin: -48px 36px 0 0;
-       }
-       @media (min-width: 387px) and (max-width: 389px) {
-        margin: -48px 38px 0 0;
-       }
-       @media (min-width: 389px) and (max-width: 391px) {
-        margin: -48px 40px 0 0;
-       }
-       @media (min-width: 391px) and (max-width: 393px) {
-        margin: -48px 42px 0 0;
-       }
-       @media (min-width: 393px) and (max-width: 395px) {
-        margin: -48px 44px 0 0;
-       }
-       @media (min-width: 395px) and (max-width: 397px) {
-        margin: -48px 46px 0 0;
-       }
-       @media (min-width: 397px) and (max-width: 399px) {
-        margin: -48px 49px 0 0;
-       }
-       @media (min-width: 399px) and (max-width: 401px) {
-        margin: -48px 50px 0 0;
-       }
-       @media (min-width: 401px) and (max-width: 403px) {
-        margin: -48px 52px 0 0;
-       }
-       @media (min-width: 403px) and (max-width: 405px) {
-        margin: -48px 53px 0 0;
-       }
-       @media (min-width: 405px) and (max-width: 407px) {
-        margin: -48px 55px 0 0;
-       }
-       @media (min-width: 407px) and (max-width: 409px) {
-        margin: -48px 57px 0 0;
-       }
-       @media (min-width: 409px) and (max-width: 411px) {
-        margin: -48px 59px 0 0;
-       }
-       @media (min-width: 411px) and (max-width: 413px) {
-        margin: -48px 61px 0 0;
-       }
-       @media (min-width: 413px) and (max-width: 415px) {
-        margin: -48px 63px 0 0;
-       }
-       @media (min-width: 415px) and (max-width: 417px) {
-        margin: -48px 65px 0 0;
-       }
-       @media (min-width: 417px) and (max-width: 420px) {
-        margin: -48px 67px 0 0;
-       }
-
-       @media (min-width: 1200px) and (max-width: 1300px) {
-        margin: -172px 142px 0 35px;
-        width: 320px;
-       }
-
-       
     }
     .Facebook{
         float: right;
@@ -430,22 +389,6 @@ export const CardLong = styled.div`
         border-radius: 16px;
         margin: 16px 16px 0 -2px;
     }
-
-    .com-cont {
-        width: 800px;
-    }
-
-    .cont-text {
-        width: 800px;
-    }
-
-    @media (min-width: 375px) and (max-width: 420px) {
-        width: 153%;
-    }
-
-    
-
-    
 `;
 
 export const Imagess = styled.img`
@@ -484,92 +427,6 @@ export const Title = styled.p`
         float: right;
         text-align: start;
     }
-
-    @media (min-width: 1200px) and (max-width: 1300px) {
-        margin: -271px 0 0 336px;
-        font-size: 17px;
-    }
-
-
-    @media (min-width: 1300px) and (max-width: 1500px) {
-        margin: -271px -24px 0 330px;
-        font-size: 21px;
-    }
-
-    @media (min-width: 1500px) and (max-width: 1600px) {
-        font-size: 23px;
-    }
-
-    @media (min-width: 1600px) and (max-width: 1700px) {
-        margin: -271px 0 0 378px;
-    }
-
-       @media (min-width: 375px) and (max-width: 377px) {
-        margin: -146px 26px 0 0;
-       }
-       @media (min-width: 377px) and (max-width: 379px) {
-        margin: -146px 27px 0 0;
-       }
-       @media (min-width: 379px) and (max-width: 381px) {
-        margin: -146px 30px 0 0;
-       }
-       @media (min-width: 381px) and (max-width: 383px) {
-        margin: -146px 32px 0 0;
-       }
-       @media (min-width: 383px) and (max-width: 385px) {
-        margin: -146px 34px 0 0;
-       }
-       @media (min-width: 385px) and (max-width: 387px) {
-        margin: -146px 36px 0 0;
-       }
-       @media (min-width: 387px) and (max-width: 389px) {
-        margin: -146px 38px 0 0;
-       }
-       @media (min-width: 389px) and (max-width: 391px) {
-        margin: -146px 40px 0 0;
-       }
-       @media (min-width: 391px) and (max-width: 393px) {
-        margin: -146px 42px 0 0;
-       }
-       @media (min-width: 393px) and (max-width: 395px) {
-        margin: -146px 44px 0 0;
-       }
-       @media (min-width: 395px) and (max-width: 397px) {
-        margin: -146px 46px 0 0;
-       }
-       @media (min-width: 397px) and (max-width: 399px) {
-        margin: -146px 49px 0 0;
-       }
-       @media (min-width: 399px) and (max-width: 401px) {
-        margin: -146px 50px 0 0;
-       }
-       @media (min-width: 401px) and (max-width: 403px) {
-        margin: -146px 52px 0 0;
-       }
-       @media (min-width: 403px) and (max-width: 405px) {
-        margin: -146px 53px 0 0;
-       }
-       @media (min-width: 405px) and (max-width: 407px) {
-        margin: -146px 55px 0 0;
-       }
-       @media (min-width: 407px) and (max-width: 409px) {
-        margin: -146px 57px 0 0;
-       }
-       @media (min-width: 409px) and (max-width: 411px) {
-        margin: -146px 59px 0 0;
-       }
-       @media (min-width: 411px) and (max-width: 413px) {
-        margin: -146px 61px 0 0;
-       }
-       @media (min-width: 413px) and (max-width: 415px) {
-        margin: -146px 63px 0 0;
-       }
-       @media (min-width: 415px) and (max-width: 417px) {
-        margin: -146px 65px 0 0;
-       }
-       @media (min-width: 417px) and (max-width: 420px) {
-        margin: -146px 67px 0 0;
-       }
 `;
 export const TargetFinal = styled.p`
 
@@ -583,32 +440,6 @@ export const TargetFinal = styled.p`
     float: right;
     margin: 0;
     margin: -203px 87px 0 40px;
-
-    @media (min-width: 1200px) and (max-width: 1300px) {
-        margin: -203px 24px 0 40px;
-    }
-
-    @media (min-width: 1300px) and (max-width: 1400px) {
-        margin: -203px 29px 0 40px;
-    }
-
-    @media (min-width: 1400px) and (max-width: 1500px) {
-        margin: -203px 28px 0 40px;
-    }
-
-    @media(min-width: 1500px) and (max-width: 1600px){
-        margin: -203px 6px 0 40px;
-    }
-
-    @media(min-width: 1500px) and (max-width: 1600px){
-        margin: -203px 6px 0 40px;
-    }
-
-    @media(min-width: 1600px) and (max-width: 1700px){
-        margin: -203px -21px 0 40px;
-    }
-
-
     @media(max-width: 480px){
         display: none;
     }
@@ -643,24 +474,6 @@ export const Final = styled.p`
     margin: 0;
     text-align: end;
     margin: -20px 40px 0 16px;
-
-    @media (min-width: 1200px) and (max-width: 1300px) {
-        width: 307px;
-    }
-
-    @media (min-width: 1300px) and (max-width: 1400px) {
-        margin: -20px 40px 0 16px;
-        width: 400px;
-    }
-    
-    @media (min-width: 1400px) and (max-width: 1500px) {
-        width: 398px;
-    }
-
-    @media (min-width: 1500px) and (max-width: 1600px) {
-        width: 394px;
-    }
-
     @media(max-width:480px){
         display: none;
     }
@@ -678,27 +491,6 @@ export const Price = styled.p`
     float: right;
     margin: 0;
     margin: -154px 88px 0 40px;
-
-    @media (min-width: 1200px) and (max-width: 1300px) {
-        margin: -155px 25px 0 263px;
-    }
-
-    @media (min-width: 1300px) and (max-width: 1400px) {
-        margin: -154px 28px 0 40px;
-    }
-
-    @media (min-width: 1400px) and (max-width: 1500px) {
-        margin: -154px 27px 0 40px;
-    }
-
-    @media (min-width: 1500px) and (max-width: 1600px) {
-        margin: -154px 7px 0 40px;
-    }
-
-    @media (min-width: 1600px) and (max-width: 1700px) {
-        margin: -154px -22px 0 40px;
-    }
-
     @media(max-width:480px){
         display: none;
     }
@@ -731,23 +523,6 @@ export const Lastprice = styled.p`
     margin: 0;
     text-align: end;
     margin: -20px 40px 0 16px;
-
-    @media (min-width: 1200px) and (max-width: 1300px) {
-        width: 310px;
-    }
-
-    @media (min-width: 1300px) and (max-width: 1400px) {
-        margin: -23px 47px 0 16px;
-        width: 400px;
-    }  
-
-    @media (min-width: 1400px) and (max-width: 1500px) {
-        width: 396px;
-    }
-
-    @media (min-width: 1500px) and (max-width: 1600px) {
-        width: 397px;
-    }
     
 `;
 export const LastDiv = styled.div`
@@ -757,29 +532,6 @@ export const LastDiv = styled.div`
     float: right;
     border-radius: 8px;
     margin: -108px 88px 0 35px;
-
-    @media (min-width: 1200px) and (max-width: 1350px) {
-        display: flex;
-        justify-content: center;
-        padding-left: 40px;
-    }
-
-    @media (min-width: 1350px) and (max-width: 1400px) {
-        padding-left: 183px;
-    }
-
-    @media (min-width: 1400px) and (max-width: 1500px) {
-        margin: -108px 27px 0 35px;
-    } 
-    
-    @media (min-width: 1500px) and (max-width: 1600px) {
-        margin: -108px 5px 0 35px;
-    } 
-
-    @media (min-width: 1600px) and (max-width: 1700px) {
-        margin: -108px -18px 0 35px;
-    } 
-
     @media(max-width: 480px){
        display: none;
     }
@@ -794,10 +546,6 @@ export const SosialN = styled.div`
     border: 1px solid #EBE5F7;
     border-radius: 8px;
     padding: 18px;
-
-    @media (min-width: 1200px) and (max-width: 1400px) {
-        display: none;
-    }
 `;
 export const Edit = styled.div`
   
@@ -926,7 +674,7 @@ export const LeftSection = styled(Container)`
     }
     
     @media (min-width: 1200px) and (max-width: 1300px) {
-        margin-left: -173px;
+        margin-left: -150px;
         margin-top: -290px;
     }
 
@@ -970,7 +718,6 @@ export const LeftSection = styled(Container)`
             display: none;
         }
     }
-
 
     #tomcrusemobile {
         display: none;
@@ -1024,7 +771,6 @@ export const TagName = styled.p `
         margin-left:22px;
     }
 `;
-
 export const Text = styled.p`
     max-width: 290px;
     text-align: center;
@@ -1162,23 +908,19 @@ export const Joined = styled.p `
 
     @media (max-width: 420px) {
         display: flex;
+        float: left;
         padding-top: 7px;
-        padding-left: 100px;
     }
 `;
 
 export const UserDesc = styled.p`
     display: none;
 
-    @media  (max-width:450px) {
+    @media (max-width:450px) {
         display: block;
         margin-top: -74px;
         margin-left: 159px;
         font-size: 12px;
-    }
-
-    @media (min-width: 375px) and (max-width: 420px) {
-        margin-left: 164px;
     }
 `
 
@@ -1192,14 +934,9 @@ export const LeftRightPriceDisplay = styled.div`
     @media (max-width: 500px) {
         display: flex;
     }
-
-    @media (min-width: 375px) and (max-width: 420px) {
-        margin-left: 164px;
-    }
 `
 
 export const LeftPrice = styled.p`
-
 `
 
 export const RightPrice = styled.p`
@@ -1210,22 +947,9 @@ export const MenuScrollCards = styled.div`
     display: flex;
     width: 153%;
 
-    @media (min-width: 1200px) and (max-width: 1700px) {
+    @media (min-width: 1200px) and (max-width:1700px) {
         width: 100%;
     }
-  
-`
-export const MenuScrollCardsDesktop = styled.div`
-    display: flex;
-    width: 153%;
-    justify-content: end;
-    margin-left: -288px;
-    padding-top: 27px;
-
-    @media (min-width: 1200px) and (max-width: 1300px) {
-        margin-left: -413px;
-    }
-
 `
 
 export const ButtonOne = styled.button`
@@ -1269,6 +993,16 @@ export const MobileBtnSection = styled.div`
             overflow: visible;
         }
 
+        .follow-btn {
+            margin: 12px 7px 12px 11px;
+            width: 118px;
+            background: #3800B0;
+            border: 1px solid #8f75bc;
+            border-radius: 8px;
+            color: white;
+            height: 50px;
+        }
+
         .insta-icon {
             font-size: 46px !important;
             margin: 14px 15px 5px -5px;
@@ -1292,7 +1026,8 @@ export const MobileBtnSection = styled.div`
 
 export const FotoSection = styled(Container)`
     padding-top: 20px;
-    max-width: 84%;
+    max-width: 88%;
+    max-width: 1270px;
     padding-bottom: 10px;
     
     .rainbow {
@@ -1301,5 +1036,567 @@ export const FotoSection = styled(Container)`
 
     body { 
         
+    }
+`
+
+export const Seconddiv = styled.div`
+
+    width: 450px;
+    height: 46px;
+    float: right;
+    margin:-210px 25px 0 0;
+    display: block;
+
+    @media (max-width: 420px) {
+        display: block;
+    }
+`;
+export const Views = styled.p`
+
+    width: 96px;
+    height: 46px;
+    float: left;
+    text-align: start;
+    font-size: 24px;
+    font-weight: 600;
+
+    @media (max-width: 420px) {
+        display: none;
+    }
+`;
+export const Lastdiv = styled.div`
+
+    width: 450px;
+    height: 56px;
+    float: right;
+    margin: 50px 20px 0 20px;
+    display: block;
+    background: #2D008D;
+    border-radius: 8px;
+
+    .star-card {
+        @media (max-width: 420px) {
+            margin: 8px 0px 0px 16px !important;
+        }
+    }
+
+    @media (max-width: 420px) {
+        width: 171px;
+        height: 37px;
+        float: right;
+        margin: 155px -7px 0px 13px;
+        display: block;
+        background: #2D008D;
+        border-radius: 8px;
+    }
+
+`;
+export const Targets = styled.p`
+
+    width: 170px;
+    height: 20px;
+    float: right;
+    margin: 18px 16px 0 0;
+    display: block;
+    color: #EBE5F7;
+    font-size: 14px;
+
+    @media (max-width: 420px) {
+        width: 100px;
+        height: 20px;
+        float: left;
+        margin: 11px 0 0 13px;
+        display: block;
+        color: #00FF9E;
+        font-size: 14px;
+        display: none;
+    }
+`;
+export const Raised = styled.p`
+
+    width: 100px;
+    height: 20px;
+    float: left;
+    margin: 18px 0 0 16px;
+    display: block;
+    color: #00FF9E;
+    font-size: 14px;
+
+    @media (max-width: 420px) {
+        margin: 10px 0px 0px 16px;
+    }
+`;
+export const CardSecond = styled.div`
+    margin-top: 24px;
+    width: 666px;
+    height: 186px;
+    background: white;
+    border: 1px solid #EBE5F7;
+    border-radius: 24px;
+    @media(max-width: 480px){
+        width: 343px;
+        height: 240px;
+        border-radius: 16px;
+        margin: 16px 16px 0 16px;
+    }
+`;
+export const Hood = styled.div`
+    margin: 34px 0 0 33px;
+    width: 600px;
+    height: 24px;
+    float: left;
+
+    @media(max-width: 480px){
+        width: 300px;
+        height: 62px;
+        border-radius: 16px;
+        margin: 16px 16px 0 16px;
+    }
+`;
+export const Parag = styled.p`
+
+    width: auto;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: 6px;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: revert;
+    text-align: start;
+    @media (max-width: 420px) {
+        display: none;
+    }
+`;
+export const Photo = styled.img`
+
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+    float: left;
+    border-radius: 50%;
+    @media(max-width: 480px){
+        float: right;
+    }
+    `;
+    export const Person = styled.p`
+
+    width: auto;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: 6px;
+    float: left;
+    color:#0C0E19;
+    font-size: 14px;
+    font-weight: 600;
+
+`;
+export const Parags = styled.p`
+
+    width: auto;
+    height: 20px;
+    margin-top: 2px;
+    float: right;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: revert;
+
+    @media(max-width: 480px){
+        float: left;
+        margin-top: 7px;
+        margin-right: 43px;
+        display: none;
+    }
+`;
+export const Titles = styled.div`
+    margin: 24px 0 0 33px;
+    width: 600px;
+    height: 24px;
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #1A1C29;
+    @media(max-width: 480px){
+        width: 290px;
+        height: 24px;
+        margin: 42px 16px 0 23px;
+    }
+`;
+export const Third = styled.div`
+    margin: 24px 0 0 27px;
+    width: 606px;
+    height: 24px;
+    float: left;
+    @media(max-width: 480px){
+        width: 334px;
+        height: 71px;
+        border-radius: 16px;
+        margin: 16px 16px 0 26px;
+    }
+`;
+export const Pass = styled.a`
+    margin-top: 2px;
+    float: right;
+    color: #3800B0;
+    font-weight: 600;
+    font-size: 12px;  
+
+    @media(max-width: 480px){
+        margin-right: 45px;
+        margin-top: 40px; 
+    }
+`;
+export const CardLonger = styled.div`
+    margin-top: 24px;
+    width: 98%;
+    height: 520px;
+    border: 1px solid #EBE5F7;
+    border-radius: 24px;
+    margin-bottom: 64px;
+    @media (min-width: 375px) and (max-width: 410px) {
+        width: 343px;
+        height: 144px;
+        border-radius: 16px;
+        margin: 1px -2px 400px 20px;
+    }
+
+    @media (min-width: 410px) and (max-width: 420px) {
+        width: 343px;
+        height: 144px;
+        border-radius: 16px;
+        margin: 1px -2px 400px 40px;
+    }
+ 
+  
+`;
+export const NotWishes = styled.p`
+
+    width: 510px;
+    height: 48px;
+    float: right;
+    font-weight: 600;
+    font-family: revert;
+    margin : 64px 165px  0 165px;
+    font-size: 40px;
+    color: #6033C0;
+
+    @media (min-width: 375px) and (max-width: 420px) {
+        width: 255px;
+        height: 48px;
+        float: none;
+        font-weight: 600;
+        font-family: revert;
+        margin: 30px 157px 0 46px;
+        font-size: 28px;
+        color: #6033C0;
+        text-align: center;
+    }
+`;
+export const Buttons = styled.div`
+
+    width: 326px;
+    height: 56px;
+    margin : 136px auto  0  auto;
+
+    @media (min-width: 375px) and (max-width: 420px) {
+        width: 151px;
+        display: grid;
+        height: 56px;
+        gap: 20px;
+        margin: 59px 94px 0px auto;
+    }
+`;
+export const Buttonleft = styled.button`
+
+    width: 150px;
+    background: #3800B0;
+    height: 56px;
+    float: left;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+`;
+export const Buttonright = styled.button`
+
+    width: 150px;
+    height: 56px;
+    float: right;
+    border-radius: 8px;
+    text-align: center;
+    color: #3800B0;
+    border: 1px solid #3800B0;
+    font-size: 14px;
+`;
+export const Glasses = styled.img`
+
+    width: 262px;
+    height: 240px;
+    margin : 24px auto  0  auto;
+
+    @media (min-width: 375px) and (max-width: 420px) {
+        width: 180px;
+        height: 150px;
+        margin: 101px auto 0 auto;
+    }
+
+`;
+
+export const Division = styled.div`
+    margin-top: 24px;
+    width: 98%;
+    height: 260px;
+    border-radius: 24px;
+    margin-bottom: 109px;
+    @media(max-width: 480px){
+        width: 343px;
+        height: 144px;
+        border-radius: 16px;
+        margin: 16px 16px 0 16px;
+    }
+    .swiper {
+        width: 840px;
+        height: 200px;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius: 16px;
+
+      
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+     
+  
+`;
+export const Maybe = styled.p`
+
+      width: 840px;
+      height: 29px;
+      font-size: 24px;
+      font-weight: 600;
+      font-family: 'Steppe';
+      text-align: start;
+      margin-bottom:24px;
+
+`
+export const Picture = styled.img`
+
+      width: 80px;
+      height: 80px;
+      text-align: start;
+      margin:-96px 46px 0 11px;
+      border-radius: 50%;
+      display:block;
+`
+export const Name = styled.p`
+
+      width:177px;
+      height: 28px;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'Steppe';
+      text-align: center;
+      margin-top:24px;
+      margin-bottom:4px;
+      margin-left:-176px;
+      display:block;
+`
+export const Tag  = styled.p`
+
+      font-size: 14px;
+      font-weight: 500;
+      font-family: 'Steppe';
+      text-align: center;
+      margin-bottom:-74px;
+      margin-left:-128px;
+
+      display:block;
+`
+
+export const DisplayOnButtonText = styled.p`
+    display: none;
+
+    @media (max-width: 420px) {
+        display: block;
+        margin: -75px 1px 1px 162px;
+        font-size: 11px;
+    }
+`
+
+export const Paragraf = styled.p`
+
+    width: auto;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: 6px;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: revert;
+    text-align: start;
+    @media(max-width: 480px){
+        display: none;
+    }
+`;
+export const Paragrap = styled.p`
+    display: none;
+    width: auto;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: 6px;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    display: none
+    font-family: revert;
+    text-align: start;
+
+    @media (max-width: 480px){
+        display: block;
+        margin-top: 40px;
+        margin-left: 7px;
+    }
+`;
+
+export const DisplayTopText = styled.p`
+    color: #0C0E19;
+    font-size: 14px;
+    display: none;
+
+    @media (max-width: 420px) {
+        display: block;
+        margin-top: 5px;
+    }
+`
+
+export const DisplayBirthdaytext = styled.p`
+    display: none;
+
+    @media (max-width: 420px) {
+        color: grey;
+        font-size: 13px;
+        display: block;
+        padding: 7px;
+    }
+`
+
+export const DisplayTime = styled.p`
+    display: none;
+
+    @media (max-width: 420px) {
+        display: block;
+        font-size: 13px;
+        color: grey;
+        margin: -1px 6px;
+    } 
+
+`
+
+export const DisplayTopImgCard = styled.div`
+    margin-top: -60px !important;
+`
+export const AlertText = styled.p`
+    font-size: 13px;
+    color: #8E93AF;
+
+    @media (max-width: 420px) {
+        display: flex;
+        gap: 15px;
+        padding-right: 10px;
+        float: right;
+        padding-top: 7px;
+    }
+
+    @media (min-width:1200px) and (max-width: 1700px) {
+        display: flex;
+        position: absolute;
+        margin-left: 107px;
+        gap: 7px;
+        padding-top: 10px;
+    }
+
+    .report-img {
+        margin-top: 2px;
+    }
+
+
+`
+
+export const Buttondiv = styled.div`
+    width: 191px;
+    height: 40px;
+    margin: 20px 0px 0 15px;
+    display: block;
+    background: #2D008D;
+    border-radius: 8px;
+
+
+    @media (min-width: 375px) and (max-width: 420px) {
+        width: 200px;
+        height: 37px;
+        display: block;
+        float: none;
+        margin: 20px 0px 0 48px;
+        background: #2D008D;
+        border-radius: 8px;
+    }
+
+    .star-card {
+        margin: 8px 0px 0px 28px;
+
+        @media (min-width: 375px) and (max-width: 420px) {
+            margin: 7px 0px 0px 32px !important;
+        }
+    }
+
+`
+
+export const RaisedText = styled.p`
+    width: 100px;
+    height: 20px;
+    float: left;
+    margin: 12px 0 0 10px;
+    display: block;
+    color: #00FF9E;
+font-size: 14px;
+
+    @media (max-width: 420px) {
+        margin: 10px 0px 0px 16px;
+    }
+`
+
+export const TargetText = styled.p`
+    width: 170px;
+    height: 20px;
+    float: right;
+    margin: 18px 16px 0 0;
+    display: block;
+    color: #EBE5F7;
+    font-size: 14px;
+
+    @media (max-width: 420px) {
+        width: 100px;
+        height: 20px;
+        float: left;
+        margin: 11px 0 0 13px;
+        display: block;
+        color: #00FF9E;
+        font-size: 14px;
+        display: none;
     }
 `

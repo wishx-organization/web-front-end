@@ -47,7 +47,7 @@ border-radius: 24px;
 
 `
 export const ImgWrapper = styled.img`
-height: 321px;
+height: 255px;
 width: 100%;
 border-radius: 24px;
 `

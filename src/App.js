@@ -20,6 +20,7 @@ import DatePicker from "react-datepicker";
 import './index.css'
 import MyProfile from "./pages/my-profile";
 import Finally from "./pages/set-new-password";
+import OtherUserProfile from "./pages/OtherUserProfile";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <GlobalStyle />
       <AppProvider>
         <Routes>
+        <Route path="/other-user-profile" element={<OtherUserProfile/>} />
         <Route path="/set-new-password" element={<Finally/>} />
         <Route path="/my-profile" element={<MyProfile/>} />
           <Route path="/settings" element={<SettingsPage/>} />
