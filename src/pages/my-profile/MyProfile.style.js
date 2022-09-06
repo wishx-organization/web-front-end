@@ -50,6 +50,15 @@ background: #E5E5E5;
         width: 182%;    
     }
 
+    .tabname:focus {
+        background: black;
+    }
+
+    .btn-section tab:focus {
+        background: black;
+    }
+
+
 }
 
 .btn-sectiondesctop {
