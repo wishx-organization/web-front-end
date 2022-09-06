@@ -1,26 +1,25 @@
-import { Container, Grid, Image, Button, Slider, Progress } from '@mantine/core';
+import { Container, Grid, Image, Button, Progress } from '@mantine/core';
 import '../home/Home.Styled'
 import { Prices } from '../../shared/components/home/homeCard/HomeCard.styled';
 import { Wrapper, ImgWrapper, Title, ContentWrapper, UserWrapper, UserAbout, UserName, UserPhoto, PriceWrapper, ProgressWrapper } from '../../shared/components/home/homeCard/HomeCard.styled';
 import React from "react";
-import { Body, ButtonSection, DateSection, LeftSection, CardLong, FollowersSection, Follower, Following, Details, Edit, Final, Date, DateText, Text, TagName, Firstprice, Namesurname, Imagess, LastDiv, Lastprice, Price, SosialN, Target, TargetFinal, SocialSection, Joined, UserDesc, LeftRightPriceDisplay, LeftPrice, RightPrice, MenuScrollCards, DisplayDateBirthaySection, MobileBtnSection, FotoSection, AlertImage, AlertText, Buttondiv, RaisedText, TargetText, AlertTextDesktop } from './Oup.Style'
+import { Body, ButtonSection, DateSection, LeftSection, CardLong, FollowersSection, Follower, Following, Date, DateText, Text, TagName,  Namesurname, SocialSection, Joined, UserDesc, LeftPrice, RightPrice, MenuScrollCards, DisplayDateBirthaySection, MobileBtnSection, FotoSection, AlertText, Buttondiv, RaisedText, CarouselSection, NameCarousel, CarouselImage, VerifiedImg, Username} from './Oup.Style'
 import rainbow from './../../style/icons/rainbowfoto.png'
-import estetika from '../../style/icons/estetika.png'
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import OwlCarousel from 'react-owl-carousel';
+import { CarouselCards } from "./CarouselCard";
 import tomcruse from '../../style/icons/tomcruse.png'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tab, Tabs, TabPanel } from 'react-tabs';
 import { Carddata } from './CardData';
-import { BsFacebook, BsTwitter, BsWhatsapp, BsInstagram, BsTelegram } from 'react-icons/bs';
-import { FaTelegram } from 'react-icons/fa';
-import { IoMailOutline } from 'react-icons/io5';
-import { RiLinksFill } from 'react-icons/ri';
-import { HiBadgeCheck, HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
-import alertimg from '../../style/icons/alert.png'
-import { Lastdiv, Seconddiv, Views, Targets, Raised, CardSecond, Hood, Parag, Photo, Person, Parags, Titles, Third, Pass, CardLonger, NotWishes, Division, Maybe, Picture, Name, Tag, Buttons, Buttonleft, Buttonright, Glasses, DisplayOnButtonText, DisplayUsernameText, DisplayBirthdaytext, DisplayTime, DisplayTitle, DisplayTextToTheWish, DisplayCountLike, DisplayButtonTheWish, Paragraf, Paragrap, DisplayTopText, DisplayTopImgCard } from './Oup.Style';
+import { BsFacebook, BsInstagram, BsTelegram } from 'react-icons/bs';
+import { HiBadgeCheck } from 'react-icons/hi';
+import { CardLonger, NotWishes, DisplayTopImgCard } from './Oup.Style';
+import verify from '../../style/icons/verified.png'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { FiAlertTriangle } from "react-icons/fi";
 import file1 from "../../style/icons/file1.png"
 import { Component } from 'react';
@@ -223,7 +222,7 @@ class OtherUserProfile extends Component {
                                                 </Buttons>
                                                 <Glasses src={file1} />
                                             </CardLonger>
-                                            
+
                                         </div>
                                         )}
                                 </Grid>
@@ -290,8 +289,23 @@ class OtherUserProfile extends Component {
                                 }
                             </TabPanel> */}
                         </Tabs>
+
+                        <OwlCarousel className='owl-theme' autoplay dots={false} margin={250} nav items={5} >
+                    {CarouselCards.data.map(({ url, name, username }) => (
+                        <div className='item'>
+                            <CarouselSection>
+                                <CarouselImage>
+                                    <Image radius={50} width={100} src={url} className="carousel-img" />
+                                </CarouselImage>
+                                <NameCarousel>{name}<VerifiedImg src={verify} /></NameCarousel>
+                                <Username>{username}</Username>
+                            </CarouselSection>
+                        </div>
+                    ))}
+                </OwlCarousel>
                     </Grid.Col>
                 </Grid>
+                
             </Body>
         )
     }

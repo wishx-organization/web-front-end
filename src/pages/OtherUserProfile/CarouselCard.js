@@ -1,7 +1,7 @@
-import carouselimg1 from '../../../style/profile-card-carousel/imgcarousel1.png'
-import carouselimg2 from '../../../style/profile-card-carousel/imgcarousel2.png'
-import carouselimg3 from '../../../style/profile-card-carousel/imgcarousel3.png'
-import carouselimg4 from '../../../style/profile-card-carousel/imgcarousel4.png'
+import carouselimg1 from '../../style/profile-card-carousel/imgcarousel1.png'
+import carouselimg2 from '../../style/profile-card-carousel/imgcarousel2.png'
+import carouselimg3 from '../../style/profile-card-carousel/imgcarousel3.png'
+import carouselimg4 from '../../style/profile-card-carousel/imgcarousel4.png'
 
 
 

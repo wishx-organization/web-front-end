@@ -4,6 +4,42 @@ import styled from "styled-components";
 export const Body = styled.div`
 background: #E5E5E5;
 
+.owl-theme {
+    padding-top: 50px;
+    width: 865px !important;
+}
+
+.owl-stage {
+    width: 2535px !important;
+}
+
+
+
+.owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -360px;
+    float: right;
+    font-size: 61px;
+    margin-right: -8px;
+}
+
+.owl-next {
+    color: #3800B0 !important;
+}
+
+.owl-next:hover {
+    background: none !important;
+}
+
+.owl-prev {
+    color: #3800B0 !important;
+}
+
+.owl-prev:hover {
+    background: none !important;  
+}
+
 .grid-root-active-wishes {
     max-width: 886px;
     padding-top: 25px;
@@ -374,6 +410,40 @@ background: #E5E5E5;
     }
 }
 `;
+
+
+export const CarouselSection = styled.div`
+    padding-top: 35px;
+    padding-bottom: 45px;
+    background: white;
+    margin-right: -235px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    border-radius: 15px;
+
+    .carousel-img {
+        border-radius: 10px;
+    }
+`
+
+export const NameCarousel = styled.div`
+    padding-top: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+`
+
+export const CarouselImage = styled.div`
+`
+
+export const VerifiedImg = styled.img`
+width: 14% !important;
+`
+
+export const Username = styled.div`
+    padding-top: 10px;
+`
 
 
 export const CardLong = styled.div`
@@ -761,7 +831,7 @@ export const Namesurname = styled.h1`
     }
 `;
 
-export const TagName = styled.p `
+export const TagName = styled.p`
     max-width: 290px;
     text-align: center;
     font-weight: 600;
@@ -784,7 +854,7 @@ export const Text = styled.p`
     }
 
 `;
-export const DateSection = styled.div `
+export const DateSection = styled.div`
     background: #F7F8FA;
     padding-top: 20px;
     padding-bottom: 1px;
@@ -898,7 +968,7 @@ export const ButtonSection = styled.div`
     }
 `;
 
-export const Joined = styled.p `
+export const Joined = styled.p`
     max-width: 290px;
     text-align: center;
     font-weight: 600;
@@ -1179,7 +1249,7 @@ export const Photo = styled.img`
         float: right;
     }
     `;
-    export const Person = styled.p`
+export const Person = styled.p`
 
     width: auto;
     height: 20px;
@@ -1416,7 +1486,7 @@ export const Name = styled.p`
       margin-left:-176px;
       display:block;
 `
-export const Tag  = styled.p`
+export const Tag = styled.p`
 
       font-size: 14px;
       font-weight: 500;

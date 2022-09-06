@@ -441,11 +441,17 @@ export const CardLong = styled.div`
     }
 
     .com-cont {
-        width: 800px;
+        @media (min-width: 1200px) and (max-width: 1700px) {
+            width: 800px;
+        }
+
+    
     }
 
     .cont-text {
-        width: 800px;
+        @media (min-width: 1200px) and (max-width: 1700px) {
+            width: 800px;
+        }
     }
 
     @media (min-width: 375px) and (max-width: 420px) {
