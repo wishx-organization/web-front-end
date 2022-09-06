@@ -5,12 +5,16 @@ export const Body = styled.div`
 background: #E5E5E5;
 
 .owl-theme {
-    padding-top: 50px;
+    padding-top: 80px;
     width: 865px !important;
 
     @media (min-width: 320px) and (max-width: 420px) {
         width: 153% !important;
     }
+}
+
+.tabpanel:focus {
+    background:black;
 }
 
 .owl-stage {
@@ -444,7 +448,7 @@ export const CarouselImage = styled.div`
 `
 
 export const VerifiedImg = styled.img`
-width: 14% !important;
+width: 12% !important;
 `
 
 export const Username = styled.div`
