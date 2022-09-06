@@ -7,13 +7,15 @@ background: #E5E5E5;
 .owl-theme {
     padding-top: 50px;
     width: 865px !important;
+
+    @media (min-width: 320px) and (max-width: 420px) {
+        width: 153% !important;
+    }
 }
 
 .owl-stage {
-    width: 2535px !important;
+    width: 600% !important;
 }
-
-
 
 .owl-nav {
     text-align: center;
@@ -22,6 +24,10 @@ background: #E5E5E5;
     float: right;
     font-size: 61px;
     margin-right: -8px;
+
+    @media (min-width: 320px) and (max-width: 420px) {
+        display: none;
+    }
 }
 
 .owl-next {
@@ -648,7 +654,7 @@ export const LeftSection = styled(Container)`
     border-radius: 20px;
     margin-left: -46px;
     width: 307px;
-    margin-top: -317px;
+    margin-top: -170px;
     position: sticky;
     top:0;
 
@@ -745,31 +751,25 @@ export const LeftSection = styled(Container)`
     
     @media (min-width: 1200px) and (max-width: 1300px) {
         margin-left: -150px;
-        margin-top: -290px;
     }
 
     @media (min-width: 1300px) and (max-width: 1400px) {
-        margin-top: -290px;
         margin-left: -110px;
     }
 
     @media (min-width: 1400px) and (max-width: 1500px) {
-        margin-top: -290px;
         margin-left: -60px;
     }
 
     @media (min-width: 1500px) and (max-width: 1600px) {
-        margin-top: -290px;
         margin-left: -10px;
     }
 
     @media (min-width: 1600px) and (max-width: 1675px) {
-        margin-top: -290px;
         margin-left: 27px;
     }
 
     @media (min-width: 1675px) and (max-width: 1725px) {
-        margin-top: -290px;
         margin-left: 50px;
     }
     

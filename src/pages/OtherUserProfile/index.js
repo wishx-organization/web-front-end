@@ -3,7 +3,7 @@ import '../home/Home.Styled'
 import { Prices } from '../../shared/components/home/homeCard/HomeCard.styled';
 import { Wrapper, ImgWrapper, Title, ContentWrapper, UserWrapper, UserAbout, UserName, UserPhoto, PriceWrapper, ProgressWrapper } from '../../shared/components/home/homeCard/HomeCard.styled';
 import React from "react";
-import { Body, ButtonSection, DateSection, LeftSection, CardLong, FollowersSection, Follower, Following, Date, DateText, Text, TagName,  Namesurname, SocialSection, Joined, UserDesc, LeftPrice, RightPrice, MenuScrollCards, DisplayDateBirthaySection, MobileBtnSection, FotoSection, AlertText, Buttondiv, RaisedText, CarouselSection, NameCarousel, CarouselImage, VerifiedImg, Username} from './Oup.Style'
+import { Body, ButtonSection, DateSection, LeftSection, CardLong, FollowersSection, Follower, Following, Date, DateText, Text, TagName, Namesurname, SocialSection, Joined, UserDesc, LeftPrice, RightPrice, MenuScrollCards, DisplayDateBirthaySection, MobileBtnSection, FotoSection, AlertText, Buttondiv, RaisedText, CarouselSection, NameCarousel, CarouselImage, VerifiedImg, Username } from './Oup.Style'
 import rainbow from './../../style/icons/rainbowfoto.png'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -28,10 +28,14 @@ class OtherUserProfile extends Component {
     constructor(props) {
         super(props)
         this.state = { matches: window.matchMedia("(min-width: 500px)").matches };
+        this.state = { matches_carousel: window.matchMedia("(max-width: 420px)").matches };
     }
     componentDidMount() {
         const handler = e => this.setState({ matches: e.matches });
         window.matchMedia("(min-width: 500px)").addEventListener('change', handler);
+
+        const carousel_handler = e => this.setState({ set_matches: e.matches_carousel });
+        window.matchMedia("(max-width:420px)").addEventListener('change', carousel_handler)
     }
 
     render() {
@@ -290,22 +294,37 @@ class OtherUserProfile extends Component {
                             </TabPanel> */}
                         </Tabs>
 
-                        <OwlCarousel className='owl-theme' autoplay dots={false} margin={250} nav items={5} >
-                    {CarouselCards.data.map(({ url, name, username }) => (
-                        <div className='item'>
-                            <CarouselSection>
-                                <CarouselImage>
-                                    <Image radius={50} width={100} src={url} className="carousel-img" />
-                                </CarouselImage>
-                                <NameCarousel>{name}<VerifiedImg src={verify} /></NameCarousel>
-                                <Username>{username}</Username>
-                            </CarouselSection>
-                        </div>
-                    ))}
-                </OwlCarousel>
+                        {this.state.matches_carousel && <OwlCarousel className='owl-theme' dots={false} margin={250} nav={true} items={3} >
+                            {CarouselCards.data.map(({ url, name, username }) => (
+                                <div className='item'>
+                                    <CarouselSection>
+                                        <CarouselImage>
+                                            <Image radius={50} width={100} src={url} className="carousel-img" />
+                                        </CarouselImage>
+                                        <NameCarousel>{name}<VerifiedImg src={verify} /></NameCarousel>
+                                        <Username>{username}</Username>
+                                    </CarouselSection>
+                                </div>
+                            ))}
+                        </OwlCarousel>}
+
+                        {!this.state.matches_carousel && <OwlCarousel className='owl-theme' dots={false} margin={250} nav={true} items={6} >
+                            {CarouselCards.data.map(({ url, name, username }) => (
+                                <div className='item'>
+                                    <CarouselSection>
+                                        <CarouselImage>
+                                            <Image radius={50} width={100} src={url} className="carousel-img" />
+                                        </CarouselImage>
+                                        <NameCarousel>{name}<VerifiedImg src={verify} /></NameCarousel>
+                                        <Username>{username}</Username>
+                                    </CarouselSection>
+                                </div>
+                            ))}
+                        </OwlCarousel>}
+
                     </Grid.Col>
                 </Grid>
-                
+
             </Body>
         )
     }
