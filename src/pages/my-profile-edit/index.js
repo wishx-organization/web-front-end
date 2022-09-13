@@ -11,6 +11,8 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { DatePickerInput } from 'carbon-components-react';
+import moment from "moment";
 import Cry_Smyle from '../../style/icons/cry_smyle.jpg'
 import {
   ProfileEditing,
@@ -123,6 +125,16 @@ const SetSaveAndCancelButtonsClick = () => {
   }
 }
 
+function getMomentFormatter(format: string): DateFormatProps {
+  // note that locale argument comes from locale prop and may be undefined
+  return {
+    formatDate: (date, locale) => moment(date).locale(locale).format(format),
+    parseDate: (str, locale) => moment(str, format).locale(locale).toDate(),
+    placeholder: format,
+  }
+};
+
+
 
 const OnClickSaveOrCancelButton = (clicked) => {
 
@@ -176,7 +188,7 @@ function MyVerticallyCenteredModal(props) {
           </FormControl>
         </div>
         <div className='reson-text-input'>
-          <input type='text' className='info_input' placeholder='Describe your reason'/>
+          <input type='text' className='info_input' placeholder='Describe your reason' />
         </div>
       </Modal.Body>
       <Modal.Footer>
@@ -199,12 +211,12 @@ function DeleteAccountConfirmSmyle(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter" >
-        Account deleted
+          Account deleted
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className='cry-smyle'>
-          <img src={Cry_Smyle} className='cry-smyle-image'/>
+          <img src={Cry_Smyle} className='cry-smyle-image' />
         </div>
         <p className='deleted-account-wish-to-user'>It is a pity that you are leaving us, but we will be glad to see you again.</p>
       </Modal.Body>
@@ -257,6 +269,7 @@ const ProfileEdit = () => {
     { value: 'next', label: 'Next.js' },
     { value: 'blitz', label: 'Blitz.js' },
   ];
+
 
 
   return (
@@ -331,7 +344,14 @@ const ProfileEdit = () => {
                     <input type='tel' required className='info-input-email' placeholder='Phone Number'></input>
                     <a href='#' className='change-button'>Change</a>
                   </div>
-                  <input type='text' className='info_input' placeholder='Date of birth'></input>
+                  <DatePickerInput
+                    placeholder="mm/dd/yyyy"
+                    labelText="Date Picker label"
+                    id="date-picker-single"
+                    onChange={date => {
+                      console.log(date);
+                    }}
+                    />
                   <div className='wish-me-input-title'>
                     <h5 className='wish-me-title'>wish.me/</h5>
                     <input className='info_input-small' required placeholder='username' />
@@ -453,27 +473,27 @@ const ProfileEdit = () => {
               <SosialMediaSelection>
                 <div className='sosial-media'>
                   <FaFacebook className='facebook'></FaFacebook>
-                  <input type='text' className='sosial-media-intputs' placeholder='Your Facebook link'/>
+                  <input type='text' className='sosial-media-intputs' placeholder='Your Facebook link' />
                 </div>
                 <div className='sosial-media'>
                   <FaInstagram className='instagram'></FaInstagram>
-                  <input type='text' className='sosial-media-intputs' placeholder='Your Instagram link'/>
+                  <input type='text' className='sosial-media-intputs' placeholder='Your Instagram link' />
                 </div>
                 <div className='sosial-media'>
                   <FaTwitter className='twitter'></FaTwitter>
-                  <input type='text' className='sosial-media-intputs' placeholder='Your Twitter link'/>
+                  <input type='text' className='sosial-media-intputs' placeholder='Your Twitter link' />
                 </div>
                 <div className='sosial-media'>
                   <FaTiktok className='tiktok'></FaTiktok>
-                  <input type='text' className='sosial-media-intputs' placeholder='Your TikTok link'/>
+                  <input type='text' className='sosial-media-intputs' placeholder='Your TikTok link' />
                 </div>
                 <div className='sosial-media'>
                   <FaTelegram className='telegram'></FaTelegram>
-                  <input type='text' className='sosial-media-intputs' placeholder='Your Telegram link'/>
+                  <input type='text' className='sosial-media-intputs' placeholder='Your Telegram link' />
                 </div>
                 <div className='sosial-media'>
                   <FaWhatsapp className='whatsapp'></FaWhatsapp>
-                  <input type='text' className='sosial-media-intputs' placeholder='Your Whatsapp link'/>
+                  <input type='text' className='sosial-media-intputs' placeholder='Your Whatsapp link' />
                 </div>
                 <SaveButton>
                   <button className='save-button'>Save</button>
@@ -485,11 +505,11 @@ const ProfileEdit = () => {
       </LittleContainer>
       <MyVerticallyCenteredModal
         show={modalShow}
-        onHide={() => {setModalShow(false), setConfirm(true)}} />
+        onHide={() => { setModalShow(false), setConfirm(true) }} />
       <DeleteAccountConfirmSmyle
         show={confirm}
         onHide={() => setConfirm(false)} />
-    </ProfileEditing>
+    </ProfileEditing >
   )
 }
 

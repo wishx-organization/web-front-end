@@ -375,12 +375,14 @@ export const MainInputs = styled.div`
    }
 
    .change-button {
-      margin-top: 17px;
       font-size: 14px;
-      margin-right: 12px;
       color: #3800B0;
       font-weight: 700;
       text-decoration : none;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+}
    }
 
    .multi-select{
@@ -497,6 +499,7 @@ export const MainInputs = styled.div`
       max-width: 550px;
       width: 550px;
       height: 56px;
+      position: relative;
       max-height: 56px;
       margin-top: 30px;
       display: flex;
