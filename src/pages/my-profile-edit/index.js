@@ -11,7 +11,6 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { DatePickerInput } from 'carbon-components-react';
 import moment from "moment";
 import Cry_Smyle from '../../style/icons/cry_smyle.jpg'
 import {
@@ -125,14 +124,7 @@ const SetSaveAndCancelButtonsClick = () => {
   }
 }
 
-function getMomentFormatter(format: string): DateFormatProps {
-  // note that locale argument comes from locale prop and may be undefined
-  return {
-    formatDate: (date, locale) => moment(date).locale(locale).format(format),
-    parseDate: (str, locale) => moment(str, format).locale(locale).toDate(),
-    placeholder: format,
-  }
-};
+
 
 
 
@@ -344,14 +336,7 @@ const ProfileEdit = () => {
                     <input type='tel' required className='info-input-email' placeholder='Phone Number'></input>
                     <a href='#' className='change-button'>Change</a>
                   </div>
-                  <DatePickerInput
-                    placeholder="mm/dd/yyyy"
-                    labelText="Date Picker label"
-                    id="date-picker-single"
-                    onChange={date => {
-                      console.log(date);
-                    }}
-                    />
+                  <input type='text' className='info_input' placeholder='Date of birth'></input>
                   <div className='wish-me-input-title'>
                     <h5 className='wish-me-title'>wish.me/</h5>
                     <input className='info_input-small' required placeholder='username' />

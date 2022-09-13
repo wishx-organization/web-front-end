@@ -56,7 +56,7 @@ function First({setShow, nextstep, nextsteplog}) {
                    </div>
                  <AiOutlineEye className='eye_button' onClick={() =>{setPassword(!password)}}
                  style={{float: 'right'}}/>
-                 <div style={{width: '100%', display: 'flex', paddingLeft: '60px'}}>
+                 <div style={{width: '100%', display: 'flex', paddingLeft: '40px', paddingBottom: '12px'}}>
                    <InputChek type="checkbox" style={{ margin: '0'}}/>
                    <ParagraphChek style={{marginLeft: '10px'}}>I agree to the terms of use</ParagraphChek>
                  </div>

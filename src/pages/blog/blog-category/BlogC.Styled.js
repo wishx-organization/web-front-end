@@ -53,15 +53,19 @@ export const ButtonSection = styled(Grid) `
         border: 2px solid rgb(229 228 228);
         border-radius:13px;
         display: flex;
-        overflow: scroll;
         @media screen and (max-width: ${({ theme })=> theme.breakPoints.sm}){width:102%}
 
         @media screen and (min-width: ${({ theme }) => theme.breakPoints.temp}) {
             width: 50%;
+            overflow: scroll;
         }
 
         @media screen and (max-width: ${({ theme }) => theme.breakPoints.temp}) {
             width: 100%;
+            overflow: scroll;
+        }
+        @media (max-width: 500px) {
+            overflow: scroll;
         }
     }
 
