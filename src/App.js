@@ -21,6 +21,9 @@ import './index.css'
 import MyProfile from "./pages/my-profile";
 import Finally from "./pages/set-new-password";
 import OtherUserProfile from "./pages/OtherUserProfile";
+import Search from "./pages/search";
+import Onlysearch from "./pages/search/Onlysearch";
+import ProfileEdit from './pages/my-profile-edit/'
 
 const App = () => {
   return (
@@ -28,6 +31,9 @@ const App = () => {
       <GlobalStyle />
       <AppProvider>
         <Routes>
+        <Route path='/profile-edit' element={<ProfileEdit />} />
+        <Route path="/only-search" element={<Onlysearch/>} />
+        <Route path="/search" element={<Search/>} />
         <Route path="/other-user-profile" element={<OtherUserProfile/>} />
         <Route path="/set-new-password" element={<Finally/>} />
         <Route path="/my-profile" element={<MyProfile/>} />
