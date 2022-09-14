@@ -41,11 +41,12 @@ class OtherUserProfile extends Component {
     render() {
         return (
             <Body>
-                <FotoSection fluid>
-                    {this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={rainbow} height={300} />}
-                    {!this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={rainbow} height={200} />}
-
-                </FotoSection>
+                <div>
+                    <FotoSection fluid>
+                        {this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={rainbow} height={300} />}
+                        {!this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={rainbow} height={200} />}
+                    </FotoSection>
+                </div>
                 <Grid className='main-grid'>
                     <Grid.Col className='col-one' span={4}>
                         <LeftSection>

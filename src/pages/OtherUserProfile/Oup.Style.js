@@ -87,6 +87,14 @@ background: #E5E5E5;
     @media (min-width: 375px) and (max-width: 420px) {
         height: 200px !important;
     }
+
+    @media (min-width: 355px) and (max-width: 375px) {
+        width: 323px;
+    }
+
+    @media (min-width: 365px) and (max-width: 375px) {
+        width: 335px;
+    }
 }
 
 .firsttabname {
@@ -209,6 +217,10 @@ background: #E5E5E5;
     text-align: center;
     cursor: pointer;
     margin: 0px 16px;
+
+    @media (min-width: 355px) and (max-width: 375px) {
+        margin: 0px -5px;
+    }
     
 }
 
@@ -339,7 +351,14 @@ background: #E5E5E5;
     -webkit-flex: none;
     -ms-flex: none;
     flex: none;
+
+    @media (min-width: 355px) and (max-width: 375px) {
+        padding: 11px 26px;
+        font-size: 14px;    
+    }
 }
+
+
 
 .tabname:focus {
     background: #EBE5F7;
@@ -662,6 +681,18 @@ export const LeftSection = styled(Container)`
     position: sticky;
     top:0;
 
+    @media (min-width: 355px) and (max-width:375px) {
+        margin-left: -116px;
+        width: 323px;
+        margin-top: -130px;
+        height: 360px;
+        position: relative;
+    }
+
+    @media (min-width: 365px) and (max-width: 375px) {
+        width: 335px;
+    }
+
     @media (min-width: 375px) and (max-width:420px) {
         margin-left: -116px;
         margin-top: -76px;
@@ -796,6 +827,7 @@ export const LeftSection = styled(Container)`
     #tomcrusemobile {
         display: none;
 
+
         @media (max-width: 500px) {
             width: 83%;
             padding-top: 20px;
@@ -805,7 +837,6 @@ export const LeftSection = styled(Container)`
             text-align: center;
             margin-top: -50px;
             display: inline-table;
-
         }
 
         @media (min-width: 389px) and (max-width: 400px) {
@@ -818,6 +849,15 @@ export const LeftSection = styled(Container)`
 
         @media (min-width: 410px) and (max-width: 421px) {
             width: 76%;
+        }
+
+        @media (min-width: 355px) and (max-width: 365px){
+            width: 84%;
+            padding-left: 107px;
+        }
+
+        @media (min-width: 365px) and (max-width: 375px) {
+            padding-left: 115px;
         }
     }
 `
@@ -844,6 +884,10 @@ export const TagName = styled.p`
     @media (max-width: 420px) {
         margin-left:22px;
     }
+
+    @media (min-width: 355px) and (max-width: 375px) {
+        margin-left: 7px;
+    }
 `;
 export const Text = styled.p`
     max-width: 290px;
@@ -855,6 +899,10 @@ export const Text = styled.p`
     @media (max-width: 420px) {
         padding-bottom: 15px;
         margin-left: 25px;
+    }
+
+    @media (min-width: 355px) and (max-width: 375px) {
+        margin-left: 17px;
     }
 
 `;
@@ -1047,7 +1095,10 @@ export const DisplayDateBirthaySection = styled.div`
     @media (max-width: 420px) {
         display: flex;
         margin-left: 40px;
+    }
 
+    @media (min-width: 355px) and (max-width:375px) {
+        margin-left: 18px;
     }
 `
 
@@ -1103,7 +1154,7 @@ export const FotoSection = styled(Container)`
     max-width: 88%;
     max-width: 1270px;
     padding-bottom: 10px;
-    
+
     .rainbow {
         border-radius: 15px !important;
     }
@@ -1594,6 +1645,10 @@ export const AlertText = styled.p`
         padding-right: 10px;
         float: right;
         padding-top: 7px;
+    }
+
+    @media (min-width: 355px) and (max-width: 375px) {
+        padding-right: 3px;
     }
 
     @media (min-width:1200px) and (max-width: 1700px) {
