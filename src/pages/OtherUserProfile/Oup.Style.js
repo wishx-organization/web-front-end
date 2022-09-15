@@ -685,7 +685,7 @@ export const LeftSection = styled(Container)`
         margin-left: -116px;
         width: 323px;
         margin-top: -130px;
-        height: 360px;
+        height: 390px;
         position: relative;
     }
 
@@ -697,42 +697,46 @@ export const LeftSection = styled(Container)`
         margin-left: -116px;
         margin-top: -76px;
         width: 358px;
-
+        position: relative;
     }
 
     @media (min-width: 375px) and (max-width:378px) {
         width: 346px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 378px) and (max-width:380px) {
         width: 349px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 380px) and (max-width:385px) {
         width: 351px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 382px) and (max-width:385px) {
         width: 354px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 385px) and (max-width:390px) {
         width: 358px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
         position: relative;
     }
 
@@ -740,49 +744,56 @@ export const LeftSection = styled(Container)`
         width: 362px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 393px) and (max-width:396px) {
         width: 366px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 397px) and (max-width:400px) {
         width: 370px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 401px) and (max-width:406px) {
         width: 375px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 406px) and (max-width:410px) {
         width: 380px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 410px) and (max-width:415px) {
         width: 383px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
 
     @media (min-width: 415px) and (max-width:421px) {
         width: 388px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 390px;
+        position: relative;
     }
     
     @media (min-width: 1200px) and (max-width: 1300px) {
