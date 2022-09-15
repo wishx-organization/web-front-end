@@ -728,11 +728,12 @@ export const LeftSection = styled(Container)`
         height: 355px;
     }
 
-    @media (min-width: 385px) and (max-width:388px) {
+    @media (min-width: 385px) and (max-width:390px) {
         width: 358px;
         margin-left: -117px;
         margin-top: -76px;
         height: 355px;
+        position: relative;
     }
 
     @media (min-width: 390px) and (max-width:393px) {
