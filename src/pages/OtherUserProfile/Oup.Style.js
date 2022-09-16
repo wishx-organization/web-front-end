@@ -1144,8 +1144,8 @@ export const MobileBtnSection = styled.div`
             font-size: 46px !important;
             margin: 14px 15px 5px 0px;
             border: 1px solid #8f75bc;
-            border-radius: 21px;
-            padding: 12px;
+            border-radius: 50%;
+            padding: 13px;
             overflow: visible;
         }
 
@@ -1161,8 +1161,8 @@ export const MobileBtnSection = styled.div`
         
         .test-insta-icon {
             border: 1px solid #8f75bc;
-            border-radius: 21px;
-            padding: 12px;
+            border-radius: 50%;
+            padding: 13px;
         }
 
         .insta-icon {
@@ -1170,8 +1170,8 @@ export const MobileBtnSection = styled.div`
             margin: 14px 15px 5px -8px;
             overflow: visible;
             border: 1px solid #8f75bc;
-            border-radius: 21px;
-            padding: 12px;
+            border-radius: 50%;
+            padding: 13px;
         }
 
         .mobile-btn {
