@@ -8,8 +8,12 @@ background: #E5E5E5;
     padding-top: 80px;
     width: 865px !important;
 
-    @media (min-width: 320px) and (max-width: 420px) {
+    @media (min-width: 320px) and (max-width: 450px) {
         width: 153% !important;
+    }
+
+    @media(min-width: 420px) and (max-width: 450px) {
+        margin-left: -132px;
     }
 }
 
@@ -29,7 +33,7 @@ background: #E5E5E5;
     font-size: 61px;
     margin-right: -8px;
 
-    @media (min-width: 320px) and (max-width: 420px) {
+    @media (min-width: 320px) and (max-width: 450px) {
         display: none;
     }
 }
@@ -76,15 +80,19 @@ background: #E5E5E5;
 }
 
 .col-root-cards {
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         min-width: 144%;
         margin-left: 8px;
         padding-top: 30px;
     }
+
+    @media (min-width: 420px) and (max-width: 450px) {
+        margin-left: -133px;
+    }
 }
 
 .rainbow {
-    @media (min-width: 375px) and (max-width: 420px) {
+    @media (min-width: 375px) and (max-width: 450px) {
         height: 200px !important;
     }
 
@@ -132,10 +140,16 @@ background: #E5E5E5;
     border: 1px solid #8f75bc;
     border-radius: 9px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         overflow: scroll;
         width: 95%;
         margin-left: 9px;   
+    }
+
+    @media (min-width: 420px) and (max-width: 450px) {
+        margin-left: -129px;
+        width: 145%;    
+        margin-top: 351px;
     }
 
     @media (min-width: 1200px) and (max-width: 1290px) {
@@ -315,7 +329,7 @@ background: #E5E5E5;
         margin: 4px 45px 0 -61px;
     }
 
-    @media (min-width: 400px) and (max-width: 420px) {
+    @media (min-width: 400px) and (max-width: 450px) {
         margin: 4px 60px 0 -61px;
     }
     
@@ -376,7 +390,7 @@ background: #E5E5E5;
     flex: none;
     display: none;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: block;
     }
 }
@@ -693,7 +707,7 @@ export const LeftSection = styled(Container)`
         width: 335px;
     }
 
-    @media (min-width: 375px) and (max-width:420px) {
+    @media (min-width: 375px) and (max-width:450px) {
         margin-left: -116px;
         margin-top: -76px;
         width: 358px;
@@ -796,7 +810,7 @@ export const LeftSection = styled(Container)`
         position: relative;
     }
 
-    @media (min-width: 420px) and (max-width:430px) {
+    @media (min-width: 450px) and (max-width:430px) {
         width: 388px;
         margin-left: -117px;
         margin-top: -76px;
@@ -890,7 +904,7 @@ export const Namesurname = styled.h1`
     padding-bottom: 10px;
     margin-right: 30px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         margin-left: 35px;
     }
 `;
@@ -901,7 +915,7 @@ export const TagName = styled.p`
     font-weight: 600;
     font-size: 14px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         margin-left:22px;
     }
 
@@ -916,7 +930,7 @@ export const Text = styled.p`
     font-weight: 400;
     margin-top: 12px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         padding-bottom: 15px;
         margin-left: 25px;
     }
@@ -936,7 +950,7 @@ export const DateSection = styled.div`
     width: 257px;
     margin: 0px 24px 0 9px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: none;
     }
 `;
@@ -946,7 +960,7 @@ export const Date = styled.h4`
     text-align: center;
     font-weight: 600;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         font-size: 11px;
         width: 98px;
         margin-left: 16px;
@@ -959,7 +973,7 @@ export const DateText = styled.p`
     font-weight: 600;
     text-align: center;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         color: grey;
     }
 `;
@@ -976,7 +990,7 @@ export const FollowersSection = styled.div`
     margin: 0px 24px 0 9px;
     margin-top: 12px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: none;
     }
 `;
@@ -987,7 +1001,7 @@ export const Follower = styled.p`
     width: 128.5px;
     text-align: center;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         font-size: 11px;
         margin-left: 8px;
     }
@@ -1000,7 +1014,7 @@ export const Following = styled.p`
     width: 128.5px;
     text-align: center;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         font-size: 11px;
     }
 `;
@@ -1017,7 +1031,7 @@ export const SocialSection = styled.div`
     margin: 0px 24px 0 9px;
     margin-top: 12px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: none;
     }
 
@@ -1034,7 +1048,7 @@ export const ButtonSection = styled.div`
         color: #3800B0;
         height: 56px;
 
-        @media (max-width: 420px) {
+        @media (max-width: 450px) {
             display: none;
         }
     }
@@ -1048,7 +1062,7 @@ export const Joined = styled.p`
     color: #5D627D;
     padding-bottom: 24px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: flex;
         float: left;
         padding-top: 7px;
@@ -1092,6 +1106,10 @@ export const MenuScrollCards = styled.div`
     @media (min-width: 1200px) and (max-width:1700px) {
         width: 100%;
     }
+
+    @media (min-width: 420px) and (max-width: 450px) {
+        width: 100%;
+    }
 `
 
 export const ButtonOne = styled.button`
@@ -1112,7 +1130,7 @@ export const DisplayDateBirthaySection = styled.div`
     margin: 0px 16px 3px 7px;
     display: none;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: flex;
         margin-left: 40px;
     }
@@ -1125,13 +1143,13 @@ export const DisplayDateBirthaySection = styled.div`
 export const MobileBtnSection = styled.div`
     display: none;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: flex;
         overflow: scroll;
 
         .fb-icon {
             font-size: 46px !important;
-            margin: 14px 15px 5px 10px;
+            margin: 14px 15px 5px 0px;
             border: 2px solid #8f75bc;
             border-radius: 25px;
             padding: 9px;
@@ -1150,7 +1168,7 @@ export const MobileBtnSection = styled.div`
 
         .insta-icon {
             font-size: 46px !important;
-            margin: 14px 15px 5px -5px;
+            margin: 14px 15px 5px -8px;
             border: 2px solid #8f75bc;
             border-radius: 25px;
             padding: 9px;
@@ -1165,6 +1183,7 @@ export const MobileBtnSection = styled.div`
             border-radius: 8px;
             color: #3800B0;
             height: 50px;
+            font-size: 12px !important;
         }
     }
 `
@@ -1192,7 +1211,7 @@ export const Seconddiv = styled.div`
     margin:-210px 25px 0 0;
     display: block;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: block;
     }
 `;
@@ -1205,7 +1224,7 @@ export const Views = styled.p`
     font-size: 24px;
     font-weight: 600;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: none;
     }
 `;
@@ -1220,12 +1239,12 @@ export const Lastdiv = styled.div`
     border-radius: 8px;
 
     .star-card {
-        @media (max-width: 420px) {
+        @media (max-width: 450px) {
             margin: 8px 0px 0px 16px !important;
         }
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         width: 171px;
         height: 37px;
         float: right;
@@ -1246,7 +1265,7 @@ export const Targets = styled.p`
     color: #EBE5F7;
     font-size: 14px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         width: 100px;
         height: 20px;
         float: left;
@@ -1267,7 +1286,7 @@ export const Raised = styled.p`
     color: #00FF9E;
     font-size: 14px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         margin: 10px 0px 0px 16px;
     }
 `;
@@ -1309,7 +1328,7 @@ export const Parag = styled.p`
     font-weight: 500;
     font-family: revert;
     text-align: start;
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: none;
     }
 `;
@@ -1406,7 +1425,7 @@ export const CardLonger = styled.div`
         margin: 1px -2px 400px 20px;
     }
 
-    @media (min-width: 410px) and (max-width: 420px) {
+    @media (min-width: 410px) and (max-width: 450px) {
         width: 343px;
         height: 144px;
         border-radius: 16px;
@@ -1426,7 +1445,7 @@ export const NotWishes = styled.p`
     font-size: 40px;
     color: #6033C0;
 
-    @media (min-width: 375px) and (max-width: 420px) {
+    @media (min-width: 375px) and (max-width: 450px) {
         width: 255px;
         height: 48px;
         float: none;
@@ -1444,7 +1463,7 @@ export const Buttons = styled.div`
     height: 56px;
     margin : 136px auto  0  auto;
 
-    @media (min-width: 375px) and (max-width: 420px) {
+    @media (min-width: 375px) and (max-width: 450px) {
         width: 151px;
         display: grid;
         height: 56px;
@@ -1480,7 +1499,7 @@ export const Glasses = styled.img`
     height: 240px;
     margin : 24px auto  0  auto;
 
-    @media (min-width: 375px) and (max-width: 420px) {
+    @media (min-width: 375px) and (max-width: 450px) {
         width: 180px;
         height: 150px;
         margin: 101px auto 0 auto;
@@ -1576,7 +1595,7 @@ export const Tag = styled.p`
 export const DisplayOnButtonText = styled.p`
     display: none;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: block;
         margin: -75px 1px 1px 162px;
         font-size: 11px;
@@ -1623,7 +1642,7 @@ export const DisplayTopText = styled.p`
     font-size: 14px;
     display: none;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: block;
         margin-top: 5px;
     }
@@ -1632,7 +1651,7 @@ export const DisplayTopText = styled.p`
 export const DisplayBirthdaytext = styled.p`
     display: none;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         color: grey;
         font-size: 13px;
         display: block;
@@ -1643,7 +1662,7 @@ export const DisplayBirthdaytext = styled.p`
 export const DisplayTime = styled.p`
     display: none;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: block;
         font-size: 13px;
         color: grey;
@@ -1659,7 +1678,7 @@ export const AlertText = styled.p`
     font-size: 13px;
     color: #8E93AF;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         display: flex;
         gap: 15px;
         padding-right: 10px;
@@ -1695,7 +1714,7 @@ export const Buttondiv = styled.div`
     border-radius: 8px;
 
 
-    @media (min-width: 375px) and (max-width: 420px) {
+    @media (min-width: 375px) and (max-width: 450px) {
         width: 200px;
         height: 37px;
         display: block;
@@ -1708,7 +1727,7 @@ export const Buttondiv = styled.div`
     .star-card {
         margin: 8px 0px 0px 28px;
 
-        @media (min-width: 375px) and (max-width: 420px) {
+        @media (min-width: 375px) and (max-width: 450px) {
             margin: 7px 0px 0px 32px !important;
         }
     }
@@ -1724,7 +1743,7 @@ export const RaisedText = styled.p`
     color: #00FF9E;
 font-size: 14px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         margin: 10px 0px 0px 16px;
     }
 `
@@ -1738,7 +1757,7 @@ export const TargetText = styled.p`
     color: #EBE5F7;
     font-size: 14px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
         width: 100px;
         height: 20px;
         float: left;
