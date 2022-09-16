@@ -786,12 +786,12 @@ export const LeftSection = styled(Container)`
         height: 360px;
         position: relative;
     }
-
+    // Iphone 11
     @media (min-width: 410px) and (max-width:415px) {
         width: 383px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -899,6 +899,10 @@ export const Namesurname = styled.h1`
 
     @media (max-width: 450px) {
         margin-left: 35px;
+    }
+
+    @media (min-width: 414px) and (max-width: 420px) {
+        margin-top: -40px;
     }
 `;
 
@@ -1145,7 +1149,7 @@ export const MobileBtnSection = styled.div`
             margin: 14px 15px 5px 0px;
             border: 1px solid #8f75bc;
             border-radius: 50%;
-            padding: 13px;
+            padding: 10px;
             overflow: visible;
         }
 
@@ -1160,9 +1164,9 @@ export const MobileBtnSection = styled.div`
         }
         
         .test-insta-icon {
-            border: 1px solid #8f75bc;
-            border-radius: 50%;
-            padding: 13px;
+            // border: 1px solid #8f75bc;
+            // border-radius: 50%;
+            // padding: 13px;
         }
 
         .insta-icon {
@@ -1171,7 +1175,7 @@ export const MobileBtnSection = styled.div`
             overflow: visible;
             border: 1px solid #8f75bc;
             border-radius: 50%;
-            padding: 13px;
+            padding: 10px;
         }
 
         .mobile-btn {
