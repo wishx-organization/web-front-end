@@ -83,7 +83,9 @@ class OtherUserProfile extends Component {
                                 <Button className='follow-btn'>Follow</Button>
                                 <Button className='mobile-btn'>Edit profile</Button>
                                 <BsFacebook className='fb-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
-                                <BsInstagram className='insta-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
+                                {/* <div className='test-insta-icon'> */}
+                                    <BsInstagram className='insta-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
+                                {/* </div> */}
                                 <BsTelegram className='insta-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
                             </MobileBtnSection>
                             <Joined>Joined November 2021 </Joined>

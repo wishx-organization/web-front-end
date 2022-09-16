@@ -699,7 +699,7 @@ export const LeftSection = styled(Container)`
         margin-left: -116px;
         width: 323px;
         margin-top: -130px;
-        height: 390px;
+        height: 360px;
         position: relative;
     }
 
@@ -707,18 +707,18 @@ export const LeftSection = styled(Container)`
         width: 335px;
     }
 
-    @media (min-width: 375px) and (max-width:450px) {
-        margin-left: -116px;
-        margin-top: -76px;
-        width: 358px;
-        position: relative;
-    }
+    // @media (min-width: 375px) and (max-width:450px) {
+    //     margin-left: -116px;
+    //     margin-top: -76px;
+    //     width: 358px;
+    //     position: relative;
+    // }
 
     @media (min-width: 375px) and (max-width:378px) {
         width: 346px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -726,7 +726,7 @@ export const LeftSection = styled(Container)`
         width: 349px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -734,7 +734,7 @@ export const LeftSection = styled(Container)`
         width: 351px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -742,7 +742,7 @@ export const LeftSection = styled(Container)`
         width: 354px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -750,7 +750,7 @@ export const LeftSection = styled(Container)`
         width: 358px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -758,7 +758,7 @@ export const LeftSection = styled(Container)`
         width: 362px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -766,7 +766,7 @@ export const LeftSection = styled(Container)`
         width: 366px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -774,7 +774,7 @@ export const LeftSection = styled(Container)`
         width: 370px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -782,7 +782,7 @@ export const LeftSection = styled(Container)`
         width: 375px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -790,7 +790,7 @@ export const LeftSection = styled(Container)`
         width: 380px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -798,7 +798,7 @@ export const LeftSection = styled(Container)`
         width: 383px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -806,7 +806,7 @@ export const LeftSection = styled(Container)`
         width: 388px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
 
@@ -814,7 +814,7 @@ export const LeftSection = styled(Container)`
         width: 388px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 400px;
+        height: 360px;
         position: relative;
     }
     
@@ -962,7 +962,7 @@ export const Date = styled.h4`
 
     @media (max-width: 450px) {
         font-size: 11px;
-        width: 98px;
+        width: 110px;
         margin-left: 16px;
         margin-top: 6px;
     }
@@ -1150,8 +1150,8 @@ export const MobileBtnSection = styled.div`
         .fb-icon {
             font-size: 46px !important;
             margin: 14px 15px 5px 0px;
-            border: 2px solid #8f75bc;
-            border-radius: 25px;
+            border: 1px solid #8f75bc;
+            border-radius: 21px;
             padding: 9px;
             overflow: visible;
         }
@@ -1165,14 +1165,20 @@ export const MobileBtnSection = styled.div`
             color: white;
             height: 50px;
         }
+        
+        .test-insta-icon {
+            border: 1px solid #8f75bc;
+            border-radius: 21px;
+            padding: 10px;
+        }
 
         .insta-icon {
             font-size: 46px !important;
             margin: 14px 15px 5px -8px;
-            border: 1px solid #8f75bc;
-            border-radius: 25px;
-            padding: 9px;
             overflow: visible;
+            border: 1px solid #8f75bc;
+            border-radius: 21px;
+            padding: 10px;
         }
 
         .mobile-btn {
