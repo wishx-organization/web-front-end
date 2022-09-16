@@ -955,7 +955,7 @@ export const Date = styled.h4`
 
     @media (max-width: 450px) {
         font-size: 11px;
-        width: 110px;
+        width: 130px;
         margin-left: 16px;
         margin-top: 6px;
     }
@@ -1119,13 +1119,13 @@ export const DisplayDateBirthaySection = styled.div`
     border-radius: 10px;
     margin: 0px 10px;
     height: 70px;
-    width: 260px;
+    width: 300px;
     margin: 0px 16px 3px 7px;
     display: none;
 
     @media (max-width: 450px) {
         display: flex;
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
     @media (min-width: 355px) and (max-width:375px) {
@@ -1145,7 +1145,7 @@ export const MobileBtnSection = styled.div`
             margin: 14px 15px 5px 0px;
             border: 1px solid #8f75bc;
             border-radius: 21px;
-            padding: 9px;
+            padding: 12px;
             overflow: visible;
         }
 
@@ -1162,7 +1162,7 @@ export const MobileBtnSection = styled.div`
         .test-insta-icon {
             border: 1px solid #8f75bc;
             border-radius: 21px;
-            padding: 10px;
+            padding: 12px;
         }
 
         .insta-icon {
@@ -1171,7 +1171,7 @@ export const MobileBtnSection = styled.div`
             overflow: visible;
             border: 1px solid #8f75bc;
             border-radius: 21px;
-            padding: 10px;
+            padding: 12px;
         }
 
         .mobile-btn {
