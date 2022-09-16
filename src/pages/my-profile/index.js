@@ -32,12 +32,14 @@ class MyProfile extends Component {
     render() {
         return (
             <Body>
-                <FotoSection fluid>
-                    {this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={estetika} height={300} />}
-                    {!this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={estetika} height={200} />}
-
-                </FotoSection>
+                <div>
+                    <FotoSection fluid>
+                        {this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={estetika} height={300} />}
+                        {!this.state.matches && <Image id='rainbow' radius="lg" className='rainbow' src={estetika} height={200} />}
+                    </FotoSection>
+                </div>
                 <Grid className='main-grid'>
+                    <div>
                     <Grid.Col className='col-one' span={4}>
                         <LeftSection>
                             <DisplayTopImgCard>
@@ -78,6 +80,7 @@ class MyProfile extends Component {
                             <Joined>Joined November 2021</Joined>
                         </LeftSection>
                     </Grid.Col>
+                    </div>
                     <Grid.Col span={8}>
                         <Tabs defaultValue="com">
                             <MenuScrollCards>

@@ -930,7 +930,7 @@ export const LeftSection = styled(Container)`
         width: 383px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 355px;
+        height: 400px;
     }
 
     @media (min-width: 415px) and (max-width:421px) {
@@ -1027,6 +1027,10 @@ export const Namesurname = styled.h1`
     @media (max-width: 420px) {
         margin-left: 35px;
     }
+
+    @media (min-width: 414px) and (max-width: 420px) {
+        margin-top: -40px;
+    }
 `;
 
 export const TagName = styled.p `
@@ -1075,7 +1079,7 @@ export const Date = styled.h4`
 
     @media (max-width: 420px) {
         font-size: 11px;
-        width: 98px;
+        width: 130px;
         margin-left: 16px;
         margin-top: 6px;
     }
@@ -1257,13 +1261,13 @@ export const DisplayDateBirthaySection = styled.div`
     border-radius: 10px;
     margin: 0px 10px;
     height: 70px;
-    width: 260px;
+    width: 300px;
     margin: 0px 16px 3px 7px;
     display: none;
 
     @media (max-width: 420px) {
         display: flex;
-        margin-left: 40px;
+        margin-left: 20px;
 
     }
 `
@@ -1312,6 +1316,14 @@ export const FotoSection = styled(Container)`
     
     .rainbow {
         border-radius: 15px !important;
+    }
+
+    .rainbow {
+        @media (min-width: 414px) and (max-width: 420px) {
+            height: 224px !important;
+            width: 388px;
+            margin-left: -34px;
+        }
     }
 
     body { 
