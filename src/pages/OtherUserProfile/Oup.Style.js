@@ -791,7 +791,7 @@ export const LeftSection = styled(Container)`
         width: 383px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 360px;
+        height: 390px;
         position: relative;
     }
 
