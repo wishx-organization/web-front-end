@@ -704,7 +704,7 @@ export const LeftSection = styled(Container)`
         width: 346px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -712,7 +712,7 @@ export const LeftSection = styled(Container)`
         width: 349px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -720,7 +720,7 @@ export const LeftSection = styled(Container)`
         width: 351px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -728,7 +728,7 @@ export const LeftSection = styled(Container)`
         width: 354px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -736,7 +736,7 @@ export const LeftSection = styled(Container)`
         width: 358px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -744,7 +744,7 @@ export const LeftSection = styled(Container)`
         width: 362px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -752,7 +752,7 @@ export const LeftSection = styled(Container)`
         width: 366px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -760,7 +760,7 @@ export const LeftSection = styled(Container)`
         width: 370px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -768,7 +768,7 @@ export const LeftSection = styled(Container)`
         width: 375px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -776,7 +776,7 @@ export const LeftSection = styled(Container)`
         width: 380px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -784,7 +784,7 @@ export const LeftSection = styled(Container)`
         width: 383px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
         position: relative;
     }
 
@@ -792,7 +792,15 @@ export const LeftSection = styled(Container)`
         width: 388px;
         margin-left: -117px;
         margin-top: -76px;
-        height: 390px;
+        height: 400px;
+        position: relative;
+    }
+
+    @media (min-width: 420px) and (max-width:430px) {
+        width: 388px;
+        margin-left: -117px;
+        margin-top: -76px;
+        height: 400px;
         position: relative;
     }
     
