@@ -1176,7 +1176,7 @@ export const MobileBtnSection = styled.div`
         }
 
         .mobile-btn {
-            margin: 12px 7px 12px 11px;
+            margin: 12px 7px 12px 3px;
             width: 118px;
             background: #FFFFFF;
             border: 1px solid #8f75bc;
