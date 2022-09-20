@@ -18,6 +18,7 @@ import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import file1 from "../../style/icons/file1.png"
 import { Component } from 'react';
+import instagram from '../../style/icons/instagram.svg'
 
 class MyProfile extends Component {
     constructor(props) {
@@ -66,7 +67,7 @@ class MyProfile extends Component {
                             </FollowersSection>
                             <SocialSection>
                                 <BsFacebook style={{ float: "left", color: "#2D008D", fontSize: "23px", margin: "0 0 0 94px" }} />
-                                <BsInstagram style={{ float: "right", color: "#2D008D", fontSize: "23px", margin: "0 94px 0 0" }} />
+                                <Image src={instagram} style={{ float: "right", color: "#2D008D", fontSize: "23px", margin: "0 94px 0 0" }} />
                             </SocialSection>
                             <ButtonSection>
                                 <Button className='second-btn'>Edit</Button>
@@ -74,7 +75,7 @@ class MyProfile extends Component {
                             <MobileBtnSection>
                                 <Button className='mobile-btn'>Edit profile</Button>
                                 <BsFacebook className='fb-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
-                                <BsInstagram className='insta-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
+                                <Image src={instagram} className='insta-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
                                 <BsTelegram className='insta-icon' style={{ color: "#2D008D", fontSize: "23px" }} />
                             </MobileBtnSection>
                             <Joined>Joined November 2021</Joined>

@@ -18,6 +18,8 @@
     "@mui/material": "^5.9.3",
     "@mui/styled-engine-sc": "^5.9.3",
     "@reduxjs/toolkit": "^1.8.3",
+    "@syncfusion/ej2-base": "^20.2.48",
+    "@syncfusion/ej2-react-splitbuttons": "^20.2.45",
     "@tabler/icons": "^1.88.0",
     "antd": "^4.23.1",
     "bootstrap": "^5.2.0",

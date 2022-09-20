@@ -1290,7 +1290,7 @@ export const MobileBtnSection = styled.div`
 
         .insta-icon {
             font-size: 46px !important;
-            margin: 14px 15px 5px -5px;
+            margin: 14px 15px 14px -5px;
             border: 2px solid #8f75bc;
             border-radius: 25px;
             padding: 9px;
