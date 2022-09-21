@@ -25,6 +25,10 @@ import Search from "./pages/search";
 import Onlysearch from "./pages/search/Onlysearch";
 import ProfileEdit from './pages/my-profile-edit/'
 import Wishpages from "./pages/wish-pages";
+import WishList from "./pages/wishes-list";
+import MyWishCompleted from "./pages/wish-pagess/my-wish-completed";
+import Wish_pages_four from "./pages/wish-pages-test/indexfour";
+import Wish_pages_second from "./pages/wish-pages-test/indexsecond";
 
 const App = () => {
   return (
@@ -32,6 +36,9 @@ const App = () => {
       <GlobalStyle />
       <AppProvider>
         <Routes>
+        <Route path="/wish-pagestwo" element={<MyWishCompleted/>} />
+        <Route path="/wish-test" element={<Wish_pages_second/>} />
+        <Route path="/wish-list" element={<WishList/>} />
         <Route path="/wishpage" element={<Wishpages/>} />
         <Route path='/profile-edit' element={<ProfileEdit />} />
         <Route path="/only-search" element={<Onlysearch/>} />

@@ -1,38 +1,40 @@
 import styled from "styled-components";
 
 export const Main_page = styled.div`
-
-    width: 100%;
     height: auto;
     background: #E5E5E5;
     padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 
-    .columnFilter {
-        position: relative;
-        display: flex;
-        cursor: pointer;
-        .filterContent {
-            border-radius: 20px;
-            padding-top: 20px !important;
-            width: 270px;
-            position: absolute;
-            left: -156px;
-            top: 30px;
-            display: flex;
-            height: 500px;
-            justify-content: left;
-            flex-direction: column;
-            text-align: left;
+    .content-container{
+        max-width: 1700px;
+        min-width: 1200px;
+    }
+
+    .modal-backdrop{
+        .modal {
+            .modal-dialog{
+                .modal-content{
+                    width: 480px;
+                  border-radius: 32px;
+                }
+            }
         }
-      }
+    }
+    
 `;
 export const Main_page_top = styled.div`
 
     width: 80.76%;
     height: auto;
-    // background: red;
     margin: 0 auto 0 auto;
     display: flex;
+    @media (min-width: 375px) and (max-width: 450px){
+        display: flex;
+        width:  343px
+    }
 `;
 export const Left_div = styled.div`
 
@@ -41,6 +43,14 @@ export const Left_div = styled.div`
     margin: 0;
     border-radius: 24px;
     float:left;
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 100%;
+
+    }
+    
+    .save-changes-button:hover{
+        background: #E5E5E5;
+    }
 `;
 export const Left_image = styled.img`
 
@@ -123,13 +133,23 @@ export const Right_div = styled.div`
     border-radius: 24px;
     margin-left: 24px;
     float: left;
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 343px;
+    }
 `;
 export const Right_top_div = styled.div`
 
     width: 100%;
-    height: 354px;
+    height: 365px;
     background: white;
     border-radius: 24px;
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 343px;
+        margin: 0 auto;
+        height: 454px;
+        float: left;
+    }
+    
 `;
 export const Top_title = styled.div`
 
@@ -141,6 +161,11 @@ export const Top_title = styled.div`
         font-size: 24px;
         color:#6033C0;
         float: right;
+    }
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 295px;
+        height: 74px;
+        margin: 24px 24px 0 24px;
     }
 `;
 export const Photo = styled.img`
@@ -189,11 +214,19 @@ export const Birthday = styled.p`
     color: #0C0E19;
     line-height: 120%;
 
+    @media(max-width: 1332px){
+        font-size: 37px;
+    }
+
+    @media(max-width: 1237px){
+        font-size: 35px;
+    }
+
 `;
     export const Last_title = styled.p`
 
     width: 83%;
-    height: 66pxpx;
+    height: 66px;
     margin: 16px 48px 0 65px;
     float: left;
     font-family: 'Inter';
@@ -201,6 +234,14 @@ export const Birthday = styled.p`
     font-size: 14px;
     color: #5D627D;
     line-height: 160%;
+
+    @media(max-width: 1332px){
+        margin-top: 10px;
+    }
+
+    @media(max-width: 1237px){
+        margin-top: 8px;
+    }
 
 `;
 export const Right_blue_div = styled.div`
@@ -210,6 +251,7 @@ export const Right_blue_div = styled.div`
     background: white;
     border-radius: 24px;
     margin-top: 24px;
+    
 `;
 export const Blue_div = styled.div`
 
@@ -338,8 +380,9 @@ export const Product = styled.button`
     float: left;
     font-size: 14px;
     border-radius: 8px;
-    .special{
+    .burgerclass:focus{
         border: 2px solid #3800B0;    }
+    
 `;
 export const Product_part = styled.button`
 
@@ -468,6 +511,26 @@ export const Hbd = styled.div`
          float: right;
          padding: 15px 15px 15px 0;
          width: 15%;
+
+         @media(max-width: 1380px){
+            font-size: 12px;
+         }
+
+         @media(max-width: 1300px){
+            font-size: 11px;
+         }
+
+         @media(max-width: 1218px){
+            font-size: 10px;
+         }
+    }
+    .twominago{
+         font-family: 'Steppe';
+         font-weight: 500;
+         font-size: 20px;
+         color: #8E93AF;
+         float: right;
+         margin: 14px 14px;
     }
    .thank{
         font-family: 'Steppe';
@@ -477,6 +540,18 @@ export const Hbd = styled.div`
         margin: 14px 0;
         width:72%;
         float: left;
+        
+   }
+   .thanks{
+        font-family: 'Steppe';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin: 14px 0;
+        width:72%;
+        float: left;
+        color: #8E93AF;
         
    }
     `;

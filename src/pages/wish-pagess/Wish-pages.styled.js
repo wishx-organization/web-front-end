@@ -1,38 +1,41 @@
 import styled from "styled-components";
 
 export const Main_page = styled.div`
-
-    width: 100%;
     height: auto;
     background: #E5E5E5;
     padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 
-    .columnFilter {
-        position: relative;
-        display: flex;
-        cursor: pointer;
-        .filterContent {
-            border-radius: 20px;
-            padding-top: 20px !important;
-            width: 270px;
-            position: absolute;
-            left: -156px;
-            top: 30px;
-            display: flex;
-            height: 500px;
-            justify-content: left;
-            flex-direction: column;
-            text-align: left;
+    .content-container{
+        max-width: 1700px;
+        min-width: 1200px;
+    }
+
+    .modal-backdrop{
+        .modal {
+            .modal-dialog{
+                .modal-content{
+                    width: 480px;
+                  border-radius: 32px;
+                }
+            }
         }
-      }
+    }
+    
 `;
 export const Main_page_top = styled.div`
 
     width: 80.76%;
     height: auto;
-    // background: red;
     margin: 0 auto 0 auto;
     display: flex;
+    @media (min-width: 375px) and (max-width: 450px){
+        display: flex;
+        width:  343px;
+        justify-content: end;
+    }
 `;
 export const Left_div = styled.div`
 
@@ -41,6 +44,14 @@ export const Left_div = styled.div`
     margin: 0;
     border-radius: 24px;
     float:left;
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 100%;
+
+    }
+    
+    .save-changes-button:hover{
+        background: #E5E5E5;
+    }
 `;
 export const Left_image = styled.img`
 
@@ -49,6 +60,11 @@ export const Left_image = styled.img`
     background: white;
     padding: 112.5px;
     border-radius: 24px;
+
+    @media (min-width: 375px) and (max-width: 450px){
+        float: left;
+        margin-left: -18px;
+    }
 `;
 export const Left_buttons = styled.div`
 
@@ -97,6 +113,15 @@ export const Left_buttons = styled.div`
         font-size: 24px;
         margin-top: -22px;
     }
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 100%;
+        margin: 830px 0 0  0; 
+        .mail, .link{
+            display: none;
+        }
+
+    }
 `;
 
 export const Left_report = styled.button`
@@ -114,6 +139,10 @@ export const Left_report = styled.button`
         float: left;
         font-size: 20px;
     }
+
+    @media (min-width: 375px) and (max-width: 450px){
+        display: none;
+    }
 `;
 
 export const Right_div = styled.div`
@@ -123,13 +152,25 @@ export const Right_div = styled.div`
     border-radius: 24px;
     margin-left: 24px;
     float: left;
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 100%;
+        float: left;
+        margin: 359px 0 0 -360px;
+    }
 `;
 export const Right_top_div = styled.div`
 
     width: 100%;
-    height: 354px;
+    height: 365px;
     background: white;
     border-radius: 24px;
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 343px;
+        margin: 0 auto;
+        height: 454px;
+        float: left;
+    }
+    
 `;
 export const Top_title = styled.div`
 
@@ -142,6 +183,15 @@ export const Top_title = styled.div`
         color:#6033C0;
         float: right;
     }
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 295px;
+        height: 74px;
+        margin: 24px 24px 0 24px;
+        .notification{
+            float: right;
+            margin-top: -69px; 
+        }
+    }
 `;
 export const Photo = styled.img`
 
@@ -149,8 +199,10 @@ export const Photo = styled.img`
     height: 24px;
     float: left;
     border-radius: 50%;
-    @media(max-width: 480px){
+    @media (min-width: 375px) and (max-width: 450px){
         float: left;
+        width: 32px;
+        height: 32px;
     }
     `;
 export const Photos = styled.img`
@@ -160,7 +212,7 @@ export const Photos = styled.img`
     float: left;
     border-radius: 50%;
     margin: 12px;
-    @media(max-width: 480px){
+    @media (min-width: 375px) and (max-width: 450px){
         float: left;
     }
     `;
@@ -173,8 +225,15 @@ export const Birthday = styled.p`
     color: #0C0E19;
     float: left;
     margin-left: 12px;
-    @media(max-width: 480px){
+    @media (min-width: 375px) and (max-width: 450px){
         float: left;
+        width: 259px;
+        height:42px;
+        margin: 8px 60px 0 0;
+        
+        .forbirthday{
+            display: block
+        }
     }
     `;
     export const Middle_title = styled.p`
@@ -189,11 +248,29 @@ export const Birthday = styled.p`
     color: #0C0E19;
     line-height: 120%;
 
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 277px;
+        height: 190px;
+        margin: 16px 24px 0 24px;
+        font-size: 32px;
+        line-break: auto;
+        font-style: normal;
+
+    }
+
+    @media(max-width: 1332px){
+        font-size: 37px;
+    }
+
+    @media(max-width: 1237px){
+        font-size: 35px;
+    }
+
 `;
     export const Last_title = styled.p`
 
     width: 83%;
-    height: 66pxpx;
+    height: 66px;
     margin: 16px 48px 0 65px;
     float: left;
     font-family: 'Inter';
@@ -201,6 +278,22 @@ export const Birthday = styled.p`
     font-size: 14px;
     color: #5D627D;
     line-height: 160%;
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 295px;
+        height: 110px;
+        margin: 16px 24px 24px 24px;
+        line-break: auto;
+
+    }
+
+    @media(max-width: 1332px){
+        margin-top: 10px;
+    }
+
+    @media(max-width: 1237px){
+        margin-top: 8px;
+    }
 
 `;
 export const Right_blue_div = styled.div`
@@ -210,6 +303,12 @@ export const Right_blue_div = styled.div`
     background: white;
     border-radius: 24px;
     margin-top: 24px;
+
+    @media (min-width: 375px) and (max-width: 450px){
+        margin-top: 525px;
+        height: 369px;
+    }
+    
 `;
 export const Blue_div = styled.div`
 
@@ -217,6 +316,11 @@ export const Blue_div = styled.div`
     height: 172px;
     background: #22006A;
     border-radius: 24px;
+
+    @media (min-width: 375px) and (max-width: 450px){
+        display: table;
+        height: 165px;
+    }
 `;
 export const Blue_top_div = styled.div`
     
@@ -250,6 +354,12 @@ export const Blue_top_div = styled.div`
     color: white;
     float: right;
     }
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 295px;
+        height:20px;
+        margin: 20px 24px 0  24px;
+     }
 `;
 
 export const Blue_loading_div = styled.div`
@@ -270,6 +380,14 @@ export const Blue_loading_div = styled.div`
         background: #00FF9E;
         border-radius: 56px;
 
+    }
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 295px;
+        margin: 16px 24px 0 24px;
+        .colorpart{
+            width: 33%;
+        }
     }
     `;
 
@@ -297,6 +415,11 @@ export const Blue_loading_div = styled.div`
     color: white;
     float: right;
     }
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 295px;
+        margin: 16px 24px 0 24px;
+    }
 `;
 export const Vashed = styled.p`
 
@@ -306,6 +429,12 @@ export const Vashed = styled.p`
     font-family: 'Steppe';
     font-weight: 600;
     float: left;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
 `;
 
 export const Congratulate = styled.div`
@@ -317,6 +446,12 @@ export const Congratulate = styled.div`
     background: blue;
     background: #E5E5E5;
     border-radius: 8px;
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 311px;
+        height: 128px;
+        margin: 9px 16px 0 16px;
+    }
 `;
 export const Congratulate_button = styled.button`
 
@@ -330,6 +465,11 @@ export const Congratulate_button = styled.button`
     color: white;
     border-radius: 8px;
     background: #3800B0;
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 100%;
+        margin: 14px 0 0 0 ;
+    }
 `;
 export const Product = styled.button`
 
@@ -338,8 +478,12 @@ export const Product = styled.button`
     float: left;
     font-size: 14px;
     border-radius: 8px;
-    .special{
+    .burgerclass:focus{
         border: 2px solid #3800B0;    }
+    
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 100%;
+    }
 `;
 export const Product_part = styled.button`
 
@@ -399,6 +543,11 @@ export const Hbd = styled.div`
     background: white;
     border-radius: 24px;
 
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 343px;
+        height: 220px;
+    }
+
     `;
 
 
@@ -429,6 +578,38 @@ export const Hbd = styled.div`
     float: right;
     }
 
+    .minago-you {
+        font-family: 'Steppe';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 140%;
+        color: #8E93AF;
+        float: right;
+    }
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 311px;
+        height: 33px;
+        margin: 16px 16px 0 16px;
+        .minago{
+             float: left;
+             margin: 0 0 0 -175px;
+             padding-top: 20px;
+        }
+ 
+        .minago-you {
+             float: left;
+             margin: 0 0 0 -105px;
+             padding-top: 20px;
+        }
+        .minagos{
+             float: left;
+             margin: 0 0 0 -173px;
+             padding-top: 20px;
+        }
+     }
+
     `;
     export const Hbd_name = styled.div`
 
@@ -451,6 +632,21 @@ export const Hbd = styled.div`
         float: right;
         margin-left: 8px; 
     }
+
+    @media (min-width: 375px) and (max-width: 450px){
+        width: 311px;
+        height: 48px;
+        margin: 16px 16px 0 16px;
+        .twofive{
+             float: right;
+             margin: 20px 0 0 0;
+             width: 20px;
+        }
+        .like{
+             float: right;
+             margin:-35px 0 0 0;
+        }
+     }
     `;
     export const Hbd_footer = styled.div`
 
@@ -468,6 +664,30 @@ export const Hbd = styled.div`
          float: right;
          padding: 15px 15px 15px 0;
          width: 15%;
+
+         @media(max-width: 1380px){
+            font-size: 12px;
+         }
+
+         @media(max-width: 1300px){
+            font-size: 11px;
+         }
+
+         @media(max-width: 1218px){
+            font-size: 10px;
+         }
+    }
+    .twominago{
+         font-family: 'Steppe';
+         font-weight: 500;
+         font-size: 20px;
+         color: #8E93AF;
+         float: right;
+         margin: 14px 14px;
+
+         @media (min-width: 375px) and (max-width: 450px) {
+            margin: -35px 14px;
+        }
     }
    .thank{
         font-family: 'Steppe';
@@ -479,7 +699,105 @@ export const Hbd = styled.div`
         float: left;
         
    }
+   .thanks{
+        font-family: 'Steppe';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin: 14px 0;
+        width:72%;
+        float: left;
+        color: #8E93AF;
+        
+   }
+
+   @media (min-width: 375px) and (max-width: 450px){
+    width: 311px;
+    height: 50px;
+    margin: 16px;
+    border-radius: 12px;
+    .thank{
+        width: 251px;
+        height: 40px;
+    }
+    .twominag{
+        width: 251px;
+        height: 18px;
+        margin: -25px 10px 0 0px;
+    }
+}
     `;
+
+
+    export const HbdFooterYou = styled.div`
+    width: 92.79%;
+    height: 52px;
+    float: left;
+    margin: 24px;
+    border-radius: 48px;
+    border: 2px solid #EBE5F7;
+
+    .twominag{
+        font-family: 'Steppe';
+        font-weight: 500;
+        font-size: 13px;
+        color: #8E93AF;
+        float: right;
+        padding: 15px 15px 15px 0;
+        width: 15%;
+   }
+   .twominago{
+        font-family: 'Steppe';
+        font-weight: 500;
+        font-size: 20px;
+        color: #8E93AF;
+        float: right;
+        margin: 14px 14px;
+
+       @media (min-width: 375px) and (max-width: 450px) {
+           margin: -35px 14px;
+       }
+   }
+  .thank{
+       font-family: 'Steppe';
+       font-weight: 500;
+       font-size: 14px;
+       color: #0C0E19;
+       margin: 14px 0;
+       width:72%;
+       float: left;
+       
+  }
+  .thanks{
+       font-family: 'Steppe';
+       font-style: normal;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 140%;
+       margin: 14px 0;
+       width:72%;
+       float: left;
+       color: #8E93AF;
+       
+  }
+  @media (min-width: 375px) and (max-width: 450px){
+   width: 311px;
+   height: 85px;
+   margin-top: 5px !important;
+   margin: 16px;
+   border-radius: 12px;
+   .thank{
+       width: 251px;
+       height: 40px;
+   }
+   .twominag{
+       width: 251px;
+       height: 18px;
+       margin: -25px 10px 0 0px;
+   }
+}
+`
 
     export const Hbday = styled.div`
     
@@ -490,6 +808,24 @@ export const Hbd = styled.div`
     margin-top: 16px;
     background: white;
     border-radius: 24px;
+
+    @media (min-width: 375px) and (max-width: 450px){
+           
+        .minago{
+             float: left;
+             margin: 20px 0 0 -103px;
+        }
+
+        .minago-you {
+            float: left;
+            margin: 20px 0 0 -103px;
+        }
+        .minagos{
+            float: left;
+            margin: 0 0 0 -173px;
+            padding-top: 20px;
+       }
+    }
 
     `;
     export const Mcdonalds = styled.div`

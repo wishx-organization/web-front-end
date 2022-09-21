@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const GridBody= styled.div`
 
   .griddiv{
-    width: 80%;
+    width: 100%;
     margin: 58px auto; 
   }
   .check{

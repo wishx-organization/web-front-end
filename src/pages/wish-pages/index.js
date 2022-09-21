@@ -7,9 +7,13 @@ import { HiOutlineFilter, HiBadgeCheck} from 'react-icons/hi';
 import { BiLike} from 'react-icons/bi';
 import { AiTwotoneLike} from 'react-icons/ai';
 import { Carddata } from "../search/CardData"
-import ReactDOM from "react-dom";
+import {
+    useWindowSize,
+  } from '@react-hook/window-size'
+import Confetti from 'react-confetti'
 import FilterColumns from "./filter/filter";
 // import './filter/styles.scss'
+
 import {
     Wrapper,
     ImgWrapper,
@@ -35,7 +39,8 @@ import {
 import React from "react";
 
 class Wishpages extends React.Component {
-    constructor(props) {
+    
+        constructor(props) {
         super(props);
         this.state = {
           filterItems: [
@@ -48,9 +53,14 @@ class Wishpages extends React.Component {
       filterHandler(selectedItems) {
         this.setState({ selectedValues: selectedItems });
       }
+      
     render() {
         return(
             <Main_page>
+                <Confetti
+                    width={1700}
+                    height={600}
+                />
                 <Main_page_top>
                  <Left_div>
                     <Left_image/>
