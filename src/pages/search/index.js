@@ -28,7 +28,7 @@ import { Mainly, Title,Name, Personal, Photo, Searchbar, Searchdiv, Tag } from "
 import {HiBadgeCheck, HiOutlineFilter} from "react-icons/hi"
 import {FiSearch} from "react-icons/fi"
 import { useState, useEffect } from "react";
-import verify from '../../style/icons/verified.png'
+
 
 
 
@@ -96,6 +96,7 @@ function Search() {
                 </div>
                 <ContentWrapper>
                   <Titles>{title}</Titles>
+
                   <UserWrapper>
                     <UserAbout>
                       <UserName>{username}</UserName>
@@ -128,7 +129,7 @@ function Search() {
           filteredCountriesa.map((index) =>(
             <Personal>
               <Photo src={index.img}/>
-              <Name>{index.name} <HiBadgeCheck className="check"/></Name>
+              <Name>{index.name}<HiBadgeCheck className="check"/></Name>
               <Tag>{index.tag}</Tag>
             </Personal>
           ))

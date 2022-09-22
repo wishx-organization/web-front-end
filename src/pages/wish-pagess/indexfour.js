@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Birthday, Blue_div, Blue_top_div, Blue_loading_div, Last_title, Left_buttons, Left_div, Left_image, Left_report, Main_page, Main_page_top, Middle_title, Photo, Right_blue_div, Right_div, Right_top_div, Top_title, Blue_button_div, Vashed, Congratulate, Congratulate_button, Product, Product_part, Product_other, All_congrulation, Hbd, Hbd_title, Hbd_name, Hbd_footer, Photos, Hbday, Mcdonalds, Picture, Mcago, Freecofe, Bottom_div, Bottom_div_title, Bottom_div_show } from "./Wish-pages.styled";
 import watch from "../../style/icons/handwatch.png"
 import { BsFacebook, BsTwitter, BsTelegram, BsWhatsapp } from 'react-icons/bs';
-import { IoMailOutline, IoNotificationsOutline, IoWarningOutline } from 'react-icons/io5';
+import { IoImageOutline, IoMailOutline, IoNotificationsOutline, IoWarningOutline } from 'react-icons/io5';
 import { RiLinksFill } from 'react-icons/ri';
-import { HiOutlineFilter, HiBadgeCheck } from 'react-icons/hi';
+import { HiOutlineFilter, HiBadgeCheck, HiOutlineDotsCircleHorizontal } from 'react-icons/hi';
 import { BiLike } from 'react-icons/bi';
-import { AiTwotoneLike } from 'react-icons/ai';
+import { AiOutlinePlusCircle, AiTwotoneLike } from 'react-icons/ai';
 import { Carddata } from "../search/CardData"
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -15,6 +15,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
+import Confetti from 'react-confetti'
 import {
     Wrapper,
     ImgWrapper,
@@ -37,6 +38,8 @@ import {
     Progress,
 
 } from "@mantine/core";
+import { Blue_left_div, Blue_right_div, Button_send, Right_blue_four, Send_div, Send_div_photo } from './Add.styled';
+import { CgTrash } from 'react-icons/cg';
 
 function MyVerticallyCenteredModal(props) {
 
@@ -101,12 +104,37 @@ function MyVerticallyCenteredModal(props) {
   }
 
 
-function Wish_pages() {
+function Wish_pages_four() {
+
+    const [windowDimenion, detectHW] = useState({
+        winWidth: window.innerWidth,
+        winHeight: window.innerHeight,
+      })
+    
+      const detectSize = () => {
+        detectHW({
+          winWidth: window.innerWidth,
+          winHeight: window.innerHeight,
+        })
+      }
+    
+      useEffect(() => {
+        window.addEventListener('resize', detectSize)
+    
+        return () => {
+          window.removeEventListener('resize', detectSize)
+        }
+      }, [windowDimenion])
+
 
     const [modalShow, setModalShow] = useState(false);
 
     return (
         <Main_page>
+            <Confetti
+                    width={windowDimenion.winWidth}
+                    height={1100}
+                />
             <div className="content-container">
                 <Main_page_top className="main-page-top">
                     <Left_div>
@@ -118,6 +146,7 @@ function Wish_pages() {
                             <BsWhatsapp className="whatsapp" />
                             <IoMailOutline className="mail" />
                             <RiLinksFill className="link" />
+                            <AiOutlinePlusCircle id="plus" />
                         </Left_buttons>
                         <Button variant="primary" className='save-changes-button' onClick={() => setModalShow(true)}
                             style={{ border: '0', display: 'flex', justifyContent: 'center' }}>
@@ -133,6 +162,7 @@ function Wish_pages() {
                                 <Birthday>
                                     Bradley Cooper <span style={{ color: "#8E93AF" }}>for</span> birthday <span style={{ color: "#8E93AF" }}>on</span> 25.10.2022
                                 </Birthday>
+                                <HiOutlineDotsCircleHorizontal className='dots-menu' />
                                 <IoNotificationsOutline className="notification" />
                             </Top_title>
                             <Middle_title>Apple Watch Graphite Stainless Steel Case with Milanese Loop</Middle_title>
@@ -142,39 +172,31 @@ function Wish_pages() {
                                 so it’s infinitely adjustable for a perfect fit.
                             </Last_title>
                         </Right_top_div>
-                        <Right_blue_div>
-                            <Blue_div>
-                                <Blue_top_div>
-                                    <p className="raised">$2 542 raised</p>
-                                    <p className="percant">33%</p>
-                                    <p className="left8">$8 558 left</p>
-                                </Blue_top_div>
-                                <Blue_loading_div>
-                                    <div className="colorpart"></div>
-                                </Blue_loading_div>
-                                <Blue_button_div>
-                                    <p className="percant">Target: $10 000</p>
-                                    <p className="left8">Final: 25.10.2022</p>
-                                </Blue_button_div>
-                            </Blue_div>
-                            <Top_title>
-                                <Photo src="https://i2.wp.com/cigirbirlik.com/wp-content/uploads/2019/06/bank_respublika_logo_291018.jpg?resize=768%2C442&ssl=1" />
-                                <Vashed>Ваше поздравление</Vashed>
-                            </Top_title>
-                            <Congratulate>
-                                <Product>
-                                    <Product_part className="burgerclass"><span className="burger">🍔</span><br />$10</Product_part>
-                                    <Product_part className="burgerclass"><span className="burger">🍔</span><br />$10</Product_part>
-                                    <Product_part className="burgerclass"><span className="burger">🍔</span><br />$10</Product_part>
-                                    <Product_part className="burgerclass"><span className="burger">🍔</span><br />$10</Product_part>
-                                    <Product_part className="burgerclass"><span className="burger">🍔</span><br />$10</Product_part>
-                                    <Product_other>other</Product_other>
-
-                                </Product>
-                                <Congratulate_button>Congratulate</Congratulate_button>
-                            </Congratulate>
-
-                        </Right_blue_div>
+                        <Right_blue_four>
+                    <Blue_div>
+                       <Blue_right_div>
+                            <p className="praise">$2 542 total raised</p>
+                            <p className="hundred">120%</p>
+                            <p className="bradley">Bradley Cooper reached his goal (10000$) <br/>and now he can get the gift he dreamed of.</p>
+                       </Blue_right_div>
+                       <Blue_left_div>✨</Blue_left_div>
+                    </Blue_div>
+                    <Top_title>
+                        <Photo src="https://i2.wp.com/cigirbirlik.com/wp-content/uploads/2019/06/bank_respublika_logo_291018.jpg?resize=768%2C442&ssl=1"/>
+                        <Vashed>Thank your friends and show the report</Vashed>
+                    </Top_title>
+                    <Send_div>
+                        <Send_div_photo>
+                            <IoImageOutline className="imgicon"/>
+                            <p className="attach">Attach a photo</p>
+                            <img className="imgtag" src="https://i2.wp.com/cigirbirlik.com/wp-content/uploads/2019/06/bank_respublika_logo_291018.jpg?resize=768%2C442&ssl=1"/>
+                            <img className="imgtag" src="https://i2.wp.com/cigirbirlik.com/wp-content/uploads/2019/06/bank_respublika_logo_291018.jpg?resize=768%2C442&ssl=1"/>
+                            <CgTrash className="trashone"/>
+                            <CgTrash id="trashone"/>
+                        </Send_div_photo>
+                        <Button_send>Send</Button_send>
+                    </Send_div>
+                </Right_blue_four>
                         <All_congrulation>
                             All congratulations <span className="eight">8</span>
                             <HiOutlineFilter className="filterclass" />
@@ -307,7 +329,7 @@ function Wish_pages() {
                     </Bottom_div_title>
                     <GridBody>
                         <Grid className="griddivwish">
-                            {Carddata.data.map(({ url, title, username, userdesc, userphoto, leftprice, rightprice }) => (
+                            {Carddata.datab.map(({ url, title, username, userdesc, userphoto, leftprice, rightprice }) => (
                                 // <Grid.Col className="gridcol" xs={6} md={3} lg={3}>
                                 <Wrapper className="cart-item" onMouseOver={(e) => {
                                     e.currentTarget.setAttribute('style', 'border: 1px solid #3800B0;');
@@ -361,4 +383,4 @@ function Wish_pages() {
     )
 }
 
-export default Wish_pages;
+export default Wish_pages_four;

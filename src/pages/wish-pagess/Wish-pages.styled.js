@@ -11,6 +11,7 @@ export const Main_page = styled.div`
     .content-container{
         max-width: 1700px;
         min-width: 1200px;
+        padding-bottom: 30px;
     }
 
     .modal-backdrop{
@@ -77,6 +78,18 @@ export const Left_buttons = styled.div`
     color: #3800B0;
     padding: 10px 0 ;
 
+    #plus {
+        display: none;
+
+        @media (min-width: 375px) and (max-width: 450px) {
+            display: block;
+            margin: 0;
+            margin-left: 284px;
+            font-size: 26px;
+            margin-top: -25px;
+        }
+    }
+
     .facebook{
         margin:0;
         margin-left: 76px;
@@ -113,6 +126,7 @@ export const Left_buttons = styled.div`
         font-size: 24px;
         margin-top: -22px;
     }
+    
 
     @media (min-width: 375px) and (max-width: 450px){
         width: 100%;
@@ -180,6 +194,7 @@ export const Top_title = styled.div`
     float: left;
     .notification{
         font-size: 24px;
+        margin-right: 10px;
         color:#6033C0;
         float: right;
     }
@@ -189,22 +204,92 @@ export const Top_title = styled.div`
         margin: 24px 24px 0 24px;
         .notification{
             float: right;
-            margin-top: -69px; 
+            margin-top: -75px;
+            margin-right: 30px;
         }
     }
+
+    .title{
+        float: left;
+        font-family: 'Steppe';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin-left: 12px;
+
+        @media (min-width: 375px) and (max-width: 450px) {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 140%;
+            margin-left: 40px;
+            float: none;
+        }
+    }
+
+    .minago{
+        font-family: 'Steppe';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 140%;
+        color: #8E93AF;
+        float: right;
+
+        @media (min-width: 375px) and (max-width: 450px) {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 140%;
+            color: #8E93AF;
+            margin-left: 40px;
+            float: none;
+        }
+    }
+
+    .dots-menu {
+        float: right;
+        font-size: 23px;
+    }
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        .dots-menu {
+            float: right;
+            margin-top: -74px;
+            font-size: 21px;
+        }
+    }
+
 `;
 export const Photo = styled.img`
 
     width: 24px;
     height: 24px;
+    margin-top: -4px;
     float: left;
     border-radius: 50%;
     @media (min-width: 375px) and (max-width: 450px){
         float: left;
         width: 32px;
         height: 32px;
+        margin-top: 2px;
     }
     `;
+
+    export const PhotoMacDon = styled.img`
+        width: 24px;
+        height: 24px;
+        margin-top: -4px;
+        float: left;
+        border-radius: 50%;
+
+        @media (min-width: 375px) and (max-width: 450px){
+            float: left;
+            width: 32px;
+            height: 32px;
+            margin-left: 17px;
+            margin-top: 2px;
+        }
+    `
 export const Photos = styled.img`
 
     width: 24px;
@@ -288,7 +373,7 @@ export const Birthday = styled.p`
     }
 
     @media(max-width: 1332px){
-        margin-top: 10px;
+        margin-top: 25px !important;
     }
 
     @media(max-width: 1237px){
@@ -310,6 +395,32 @@ export const Right_blue_div = styled.div`
     }
     
 `;
+
+export const RightBlueDivForThree = styled.div`
+    width: 100%;
+    height: 270px;
+    background: white;
+    border-radius: 24px;
+    margin-top: 24px;
+
+    @media (min-width: 375px) and (max-width: 450px){
+        margin-top: 525px;
+        height: 270px;
+    }
+`
+
+export const Right_BlueDivSecon = styled.div`
+    width: 100%;
+    height: 555px;
+    background: white;
+    border-radius: 24px;
+    margin-top: 24px;
+
+    @media (min-width: 375px) and (max-width: 450px){
+        margin-top: 525px;
+        height: 565px;
+    }
+` 
 export const Blue_div = styled.div`
 
     width: 100%;
@@ -319,7 +430,7 @@ export const Blue_div = styled.div`
 
     @media (min-width: 375px) and (max-width: 450px){
         display: table;
-        height: 165px;
+        height: 120px;
     }
 `;
 export const Blue_top_div = styled.div`
@@ -329,6 +440,7 @@ export const Blue_top_div = styled.div`
     width: 85.58%;
     height: 20px;
     margin: 40px 48px 0 48px;
+
     .raised{
     font-family: 'Steppe';
     font-style: normal;
@@ -359,7 +471,8 @@ export const Blue_top_div = styled.div`
         width: 295px;
         height:20px;
         margin: 20px 24px 0  24px;
-     }
+    }
+    
 `;
 
 export const Blue_loading_div = styled.div`
@@ -428,12 +541,17 @@ export const Vashed = styled.p`
     margin-left: 16px;
     font-family: 'Steppe';
     font-weight: 600;
+    margin-top: -5px;
     float: left;
 
     @media (min-width: 375px) and (max-width: 450px) {
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 10px;
+        width: 80%;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1269px){
+        margin-left: 4px;
     }
 `;
 
@@ -559,6 +677,7 @@ export const Hbd = styled.div`
     margin: 24px 24px 0 24px;
     .give{
         color: #8E93AF;
+        margin-left: 3px;
     }
     .title{
     float: left;
@@ -567,6 +686,11 @@ export const Hbd = styled.div`
     font-size: 14px;
     line-height: 140%;
     margin-left: 12px;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        float: none;
+        margin-left: 40px;
+    }
     }
     .minago{
     font-family: 'Steppe';
@@ -576,6 +700,10 @@ export const Hbd = styled.div`
     line-height: 140%;
     color: #8E93AF;
     float: right;
+    @media (min-width: 375px) and (max-width: 450px) {
+        float: none;
+        margin-left: 40px;
+    }
     }
 
     .minago-you {
@@ -592,11 +720,7 @@ export const Hbd = styled.div`
         width: 311px;
         height: 33px;
         margin: 16px 16px 0 16px;
-        .minago{
-             float: left;
-             margin: 0 0 0 -175px;
-             padding-top: 20px;
-        }
+        
  
         .minago-you {
              float: left;
@@ -634,9 +758,9 @@ export const Hbd = styled.div`
     }
 
     @media (min-width: 375px) and (max-width: 450px){
-        width: 311px;
+        width: 287px;
         height: 48px;
-        margin: 16px 16px 0 16px;
+        margin: 16px 16px 0 20px;
         .twofive{
              float: right;
              margin: 20px 0 0 0;
@@ -714,9 +838,14 @@ export const Hbd = styled.div`
 
    @media (min-width: 375px) and (max-width: 450px){
     width: 311px;
-    height: 50px;
+    height: 83px;
     margin: 16px;
     border-radius: 12px;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+
+    }
+
     .thank{
         width: 251px;
         height: 40px;
@@ -811,10 +940,6 @@ export const Hbd = styled.div`
 
     @media (min-width: 375px) and (max-width: 450px){
            
-        .minago{
-             float: left;
-             margin: 20px 0 0 -103px;
-        }
 
         .minago-you {
             float: left;
@@ -838,7 +963,24 @@ export const Hbd = styled.div`
     background: white;
     border-radius: 24px;
 
+    @media (min-width: 375px) and (max-width: 450px) {
+        height: 260px;
+    }
+
     `;
+
+    export const MacdonalsOne = styled.div`
+        float: left;
+        width: 100%;
+        height: 152px;
+        margin-top: 16px;
+        background: white;
+        border-radius: 24px;
+
+        @media (min-width: 375px) and (max-width: 450px) {
+            height: 200px;
+        }
+    `
 
     export const Picture = styled.img`
 
@@ -849,13 +991,32 @@ export const Hbd = styled.div`
     margin: 16px 24px 16px 19px;
     @media(max-width: 480px){
         float: left;
+        object-fit: cover;
+        width: 310px;
     }
     `;
+
+    export const MacdonalsOnePicture = styled.img`
+        width: 180px;
+        height: 120px;
+        float: left;
+        border-radius: 8px;
+        margin: 16px 24px 16px 19px;
+
+        @media(max-width: 480px){
+            float: left;
+            object-fit: cover;
+            width: 310px;
+            height: 120px;
+            border-radius: 8px;
+            margin: 16px 24px 16px 19px;
+            float: left;
+        }
+    `
     export const Mcago = styled.div`
 
-    width: 62.16%;
+    width: 97%;
     height: 24px;
-    float: left;
     margin: 24px 24px 0 0;
     .give{
         color: #8E93AF;
@@ -867,6 +1028,11 @@ export const Hbd = styled.div`
     font-size: 14px;
     line-height: 140%;
     margin-left: 12px;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        float: none;
+        margin-left: 60px;
+    }
     }
     .minago{
     font-family: 'Steppe';
@@ -876,16 +1042,20 @@ export const Hbd = styled.div`
     line-height: 140%;
     color: #8E93AF;
     float: right;
+
+        @media (min-width: 375px) and (max-width: 450px){
+            margin-left: 60px;
+            float: none;
+        }
     }
     @media(max-width: 480px){
-        float: left;
+        // float: left;
     }
     `;
     export const Freecofe = styled.div`
 
-    width: 62.16%;
+    width: 98%;
     height: 24px;
-    float: left;
     margin: 24px 24px 0 0;
     font-family: 'Steppe';
     font-style: normal;
@@ -898,18 +1068,35 @@ export const Hbd = styled.div`
         font-size: 20px;
         color: linear-gradient(206.3deg, #EEDEC7 12.6%, #C08B65 71.69%), linear-gradient(206.06deg, #BFCEE3 11.59%, #67768C 82.29%);
     }
-    @media(max-width: 480px){
+    @media (min-width: 375px) and (max-width: 450px){
         float: left;
+        margin-left: 22px;
+        width: 90%;
     }
     `;
+
+    export const ActiveMac = styled.p`
+        font-size:13px;
+        color: #3800B0;
+        padding-top: 5px;
+
+        @media (min-width: 375px) and (max-width: 450px){
+            display: none;  
+        }
+        
+    `
 
     export const Bottom_div = styled.div`
     
         width: 100%;
-        height: 1009px;
+        height: 925px;
         background: white;
         margin-top: 72px;
         border-radius: 0 0 48px 48px; 
+
+        @media (min-width: 375px) and (max-width: 450px) {
+            display: none;
+        }
     `
     export const Bottom_div_title = styled.p`
     
@@ -920,10 +1107,9 @@ export const Hbd = styled.div`
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
-        line-height: 120%;
-        margin: 0 auto;
-        padding-top: 80px;
-        padding-bottom: 64px;
+        margin: -30px 43px 45px 9px;
+        padding-top: 43px;
+        padding-bottom: 60px;
         `
     export const Bottom_div_show = styled.p`
     

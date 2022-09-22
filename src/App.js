@@ -26,9 +26,13 @@ import Onlysearch from "./pages/search/Onlysearch";
 import ProfileEdit from './pages/my-profile-edit/'
 import Wishpages from "./pages/wish-pages";
 import WishList from "./pages/wishes-list";
-import MyWishCompleted from "./pages/wish-pagess/my-wish-completed";
-import Wish_pages_four from "./pages/wish-pages-test/indexfour";
-import Wish_pages_second from "./pages/wish-pages-test/indexsecond";
+import Wish_pages_second from "./pages/wish-pagess/indexsecond";
+import Wish_pages from "./pages/wish-pagess";
+import Wish_pages_four from './pages/wish-pagess/indexfour'
+import Wish_pages_three from './pages/wish-pagess/indexthree'
+import Created_Success_Wish from "./pages/creating-success-wish";
+import Created_Wish from "./pages/creating-wish";
+import Editing_Wish from "./pages/editing-wish";
 
 const App = () => {
   return (
@@ -36,10 +40,14 @@ const App = () => {
       <GlobalStyle />
       <AppProvider>
         <Routes>
-        <Route path="/wish-pagestwo" element={<MyWishCompleted/>} />
-        <Route path="/wish-test" element={<Wish_pages_second/>} />
+        <Route path="/wish-edit" element={<Editing_Wish />} />
+        <Route path="/creating-wish" element={<Created_Wish />} />
+        <Route path="/creating-wish-success" element={<Created_Success_Wish />} />
+        <Route path="/other-user-wish-complete" element={<Wish_pages_second/>} />
+        <Route path='/my-wish-complete' element={<Wish_pages_four/>}/>
+        <Route path='/my-wish' element={<Wish_pages_three/>}/>
+        <Route path="/other-user-wish" element={<Wish_pages />} />
         <Route path="/wish-list" element={<WishList/>} />
-        <Route path="/wishpage" element={<Wishpages/>} />
         <Route path='/profile-edit' element={<ProfileEdit />} />
         <Route path="/only-search" element={<Onlysearch/>} />
         <Route path="/search" element={<Search/>} />

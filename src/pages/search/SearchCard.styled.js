@@ -3,14 +3,33 @@ import styled from "styled-components";
 export const GridBody= styled.div`
 
   .griddiv{
-    width: 100%;
+    width: 80%;
     margin: 58px auto; 
+  }
+
+  @media (min-width: 1200px) and ()
+  
+  .griddivwish{
+    width: 80%;
+    margin: 58px auto 0 auto;
+     
+    @media(max-width: 1605px){
+      width: 85%;
+    }
+
+    @media(max-width: 1500px){
+      width: 88%;
+    }
+
+    @media(max-width: 1300px){
+      width: 90%;
+    }
   }
   .check{
     float:right;
     color: #1A76F2; 
     font-size:17px;
-    margin:1px;
+    margin:4px;
 }
   @media (min-width: 375px) and (max-width: 420px){
   
@@ -35,13 +54,14 @@ export const GridBody= styled.div`
   }
   `
   export const Wrapper = styled.div`
-background: #FFFFFF;
-border: 1px solid #EBE5F7;
-border-radius: 24px;
+   background: #FFFFFF;
+   border: 1px solid #EBE5F7;
+   border-radius: 24px;
 
-width: 23%;
-margin :  5px auto;
-.image-container{
+   width: 23%;
+   min-width: 230px;
+   margin: 5px auto;
+  .image-container{
 
     position: relative;
     display: flex;

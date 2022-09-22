@@ -102,14 +102,14 @@ export const Name = styled.p`
 
     width: 155px;
     height: 28px;
-    margin: 16px -5px 0 auto;
-    display: flex; 
+    margin: 16px auto 0 auto;
+    display: block; 
     font-weight: 600;
     color: #0C0E19;
-    font-size: 15px;
+    font-size: 20px;
     @media (min-width: 375px) and (max-width: 420px){
         width:121px;
-        font-size: 12px
+        font-size: 16px
     }
 `;
 export const Tag = styled.p`
@@ -226,8 +226,4 @@ export const Searchstartdiv = styled.div`
         margin: 16px auto 0 auto; 
     }
 }
-`
-
-
-export const VerificationImg = styled.img`
 `

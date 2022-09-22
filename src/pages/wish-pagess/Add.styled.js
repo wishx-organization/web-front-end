@@ -33,10 +33,18 @@ export const Right_blue_bottom = styled.div`
 
     width: 85.58%;
     height: 284px;
-    background: white;
     border-radius: 24px;
     margin: 24px 48px 40px 48px;
     float: right;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        width: 99.58%;
+        height: 287px;
+        border-radius: 24px;
+        margin: -9px 1px 40px 29px;
+        float: right;
+    }
+
     .twofive{
         font-family: 'Steppe';
         font-style: normal;
@@ -44,6 +52,15 @@ export const Right_blue_bottom = styled.div`
         font-size: 13px;
         color: #6033C0;
         float: right;
+
+        @media (min-width: 375px) and (max-width: 450px) {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: #6033C0;
+            padding-right: 12px;
+            float: right;
+        }
     }
     .like{
         float: right;
@@ -60,6 +77,17 @@ export const Paragraph = styled.p`
     color: #1A1C29;
     float: left;
 
+    @media (min-width: 375px) and (max-width: 450px) {
+        width: 83.64%;
+        font-family: 'Steppe';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        padding-left: 24px;
+        color: #1A1C29;
+        float: left;
+    }
+
 `;
 
 export const Photoone = styled.img`
@@ -69,6 +97,15 @@ export const Photoone = styled.img`
     float: left;
     margin: 24px 24px 40px 0;
     border-radius: 8px;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        width: 35%;
+        height: 133px;
+        margin: 14px 29px 28px 23px;
+        border-radius: 16px;
+        margin-top: 169px;
+        float: none;
+    }
 `
 export const Phototwo = styled.img`
 
@@ -77,6 +114,15 @@ export const Phototwo = styled.img`
     float: left;
     margin-top: 24px;
     border-radius: 8px;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        width: 47.9%;
+        height: 132px;
+        margin-top: -160px;
+        border-radius: 8px;
+        margin-left: 160px;
+        float: none;
+    }
 `;
 export const Blue_right_div = styled.div`
 
@@ -87,6 +133,10 @@ export const Blue_right_div = styled.div`
 
     @media (min-width: 375px) and (max-width: 450px) {
         margin: 26px -16px 49px 15px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1700px) {
+        margin: 30px 0 48px 30px;
     }
     .praise{
         font-family: 'Steppe';
@@ -144,9 +194,19 @@ export const Right_three_div = styled.div`
 `;
 export const Time_div = styled.div`
 
-    width: 80.56%;
+    width: 120%;
     height: 45px;
     margin: 40px 22px 40px 48px;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        margin: 2px 11px 40px 25px;
+    }
+
+    @media (min-width: 1260px) and (max-width:1355px) {
+        margin: 37px 22px 39px 6px;
+    }
+
+
 `;
 export const Time_div_p = styled.p`
 
@@ -159,6 +219,9 @@ export const Time_div_p = styled.p`
     color: #0C0E19;
     margin-right: 48px;
     display:inline-block;
+    @media (min-width: 375px) and (max-width: 450px) {
+        padding-top: 25px;
+    }
 
     .bottomword{
         font-family: 'Steppe';
@@ -194,6 +257,10 @@ export const Time_div_p = styled.p`
     border-radius: 8px;
     margin: 40px 48px 40px 48px;
     float: left;
+
+    @media (min-width: 375px) and (max-width: 450px) {
+        margin: 18px 48px 40px 48px;
+    }
     `;
     export const Send_div_photo = styled.div`
 
@@ -206,6 +273,14 @@ export const Time_div_p = styled.p`
 
     @media (min-width: 375px) and (max-width: 450px) {
         width: 100%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1700px) {
+        width: 56%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1345px) {
+        width: 65%;
     }
 
     .imgicon{
