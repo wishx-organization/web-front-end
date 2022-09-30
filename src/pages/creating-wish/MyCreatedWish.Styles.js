@@ -396,6 +396,7 @@ export const Container = styled.div`
             background: #110035;
             padding: 5px;
 
+
             .apple-icon{
                font-size: 20px;
                color: #FFFFFF;
