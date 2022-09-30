@@ -16,7 +16,6 @@ import BlogSRNotFound from "./pages/blog/blogsearch-noResult";
 import BlogPost from "./pages/blog/blog-post";
 import SettingsPage from "./pages/settings";
 import "react-datepicker/dist/react-datepicker.css";
-import DatePicker from "react-datepicker";
 import './index.css'
 import MyProfile from "./pages/my-profile";
 import Finally from "./pages/set-new-password";
@@ -24,7 +23,6 @@ import OtherUserProfile from "./pages/OtherUserProfile";
 import Search from "./pages/search";
 import Onlysearch from "./pages/search/Onlysearch";
 import ProfileEdit from './pages/my-profile-edit/'
-import Wishpages from "./pages/wish-pages";
 import WishList from "./pages/wishes-list";
 import Wish_pages_second from "./pages/wish-pagess/indexsecond";
 import Wish_pages from "./pages/wish-pagess";
@@ -33,6 +31,9 @@ import Wish_pages_three from './pages/wish-pagess/indexthree'
 import Created_Success_Wish from "./pages/creating-success-wish";
 import Created_Wish from "./pages/creating-wish";
 import Editing_Wish from "./pages/editing-wish";
+import Rating from "./pages/rating";
+import Calendar from "./pages/calendar";
+import Payment from "./pages/payment";
 
 const App = () => {
   return (
@@ -40,6 +41,9 @@ const App = () => {
       <GlobalStyle />
       <AppProvider>
         <Routes>
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/rating" element={<Rating />} />
         <Route path="/wish-edit" element={<Editing_Wish />} />
         <Route path="/creating-wish" element={<Created_Wish />} />
         <Route path="/creating-wish-success" element={<Created_Success_Wish />} />

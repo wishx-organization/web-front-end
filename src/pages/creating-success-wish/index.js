@@ -94,7 +94,7 @@ const Created_Success_Wish = () => {
                 <h5 className='link-label'>Copy link</h5>
                 <div className='cash-quantity-container'>
                   <FontAwesomeIcon icon={faLink} className='link-icon' />
-                  <input type='text' placeholder='wishx.me/wx92141' style={{ background: '#ECEEF7' }} />
+                  <input type='text' value='wishx.me/wx92141' style={{ background: '#ECEEF7' }} />
                   <button className='copy-button'>Copy</button>
                   <FontAwesomeIcon icon={faCopy} className='copy-icon' />
                 </div>
