@@ -34,6 +34,7 @@ import Editing_Wish from "./pages/editing-wish";
 import Rating from "./pages/rating";
 import Calendar from "./pages/calendar";
 import Payment from "./pages/payment";
+import Messages from "./pages/messages";
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
       <GlobalStyle />
       <AppProvider>
         <Routes>
+        <Route path="/messages" element={<Messages />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/rating" element={<Rating />} />
