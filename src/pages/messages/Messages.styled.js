@@ -269,7 +269,7 @@ export const MessageTimedclicked = styled.h3`
 
 export const MessageScroll = styled.div`
     overflow: auto;
-    height: 765px;
+    height: 830px;
 `
 
 
@@ -354,7 +354,7 @@ export const RightMessage = styled.div`
 
 export const MessageDeletePopupSection = styled.div`
     padding: 10px;
-    box-shadow: 0px -6px 10px #0000000f;
+    box-shadow: 0px -1px 0px #0000000f;
     display: flex;
     gap: 20px;
     padding-top: 30px;
@@ -430,10 +430,11 @@ export const TrashIconAttachesDiv = styled.p`
     float: right;
     display: flex;
     padding-top:40px;
+    box-shadow: 0px -1px 0px #0000000f;
 `
 
 export const DeleteImageContainer = styled.div`
-    box-shadow: 0px -6px 10px #0000000f;
+    padding-top:55px;
 `
 
 export const MessageUserInputContainer = styled.div`
@@ -497,6 +498,7 @@ export const RightSection = styled(Container)`
     background: white;
     border-radius: 20px;
     width: 307px;
+    margin-top: 17px;
 
     .bluechek{
         color: blue;
@@ -948,11 +950,10 @@ export const AlertText = styled.p`
 export const CardLong = styled.div`
     margin-top: 24px;
     width: 87%;
-    padding-top: 40px;
+    padding-top: 100px;
     height: 321px;
-    background: white;
-    border: 1px solid #EBE5F7;
     border-radius: 24px;
+    margin-left: 14px;
 
     .slider{
         width: 170px;
@@ -1283,6 +1284,7 @@ export const Price = styled.p`
 
 export const UserLastWishText = styled.h3`
     color: #0C0E19;
+    margin-left: 14px;
     font-size: 16px;
     font-weight: 600;
 `
