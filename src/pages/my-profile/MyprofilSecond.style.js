@@ -218,7 +218,6 @@ export const CardSecond = styled.div`
     }
 `;
 export const Hood = styled.div`
-    margin: 34px 0 0 33px;
     width: 600px;
     height: 24px;
     float: left;

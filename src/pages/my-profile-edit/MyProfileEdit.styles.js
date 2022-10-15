@@ -130,6 +130,40 @@ export const EditingButtons = styled.div`
     }
   }
 
+`
+
+export const TabButtons = styled.div`
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @media(max-width: 1200px){
+   justify-content: center;
+   margin: 0;
+  }
+
+  @media(min-width: 1200px){
+  }
+
+  
+  @media(max-width: 645px){
+   padding: 0;
+   justify-content: start;
+  }
+
+
+  .insider{
+      display: flex;
+      padding: 0;
+      border: 1px solid #e3dfe3;
+      border-radius: 10px;
+    
+    @media(max-width: 1000px){
+      padding-left: 30px;
+    }
+  }
+
   .editing-buttons{
      width: 200px;
      min-wdith: 200px;

@@ -174,7 +174,7 @@ class Messages extends Component{
     
                         </LeftMessageSection>
                     </Grid.Col>
-                    <Grid.Col md={6} style={{ background: '#F7F8FA', marginTop: "25px;" }}>
+                    <Grid.Col md={6} style={{ background: '#F7F8FA', marginTop: "17px;" }}>
                         <MessageSectionUser>
                             <MessageTopUserFoto src="https://s3-alpha-sig.figma.com/img/2d64/31a1/53d9d3b5efd0efe87648846f6bd08e5e?Expires=1665964800&Signature=gs6nSGc8WEiR3bVWNE9Co-YbcX-eahJYf0~nS4oa8wjOOdeWpX8O4b~bPNJyNLujuxHXcxWmDoiwDK9s-U0fIX1-MjPS71VLh8fMucl1O9XF-Csg7oEP0GWa9IOCyM0a6PRNzy3TOgoZneKpSZ-H10vPvruFypBK-dAb-txbzMvyrVWi-Ay0xF88UTd~6YheGhXJRGUvxzRXG6aurDB~vCakMd~73ZB2px27EbiEBAey2e4CwzIGn1s0zCz7IxZxlDqQYXvxdhpSK8I3tvFFFwuZiOO3quLg0q4lXMHrVuhe7VklwD5-jfZmje5IfAIUJ5I1wa2UMfBTvijI8B1lxg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" />
                             <MessageTopUsername>Jenny Wilson</MessageTopUsername>

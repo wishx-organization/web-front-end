@@ -35,6 +35,9 @@ import Rating from "./pages/rating";
 import Calendar from "./pages/calendar";
 import Payment from "./pages/payment";
 import Messages from "./pages/messages";
+import ContactsPage from "./pages/contacts/contacts-subscribers";
+import PartnersPage from "./pages/partners/partners-page";
+import Partners from "./pages/partners/partners-coupons";
 
 const App = () => {
   return (
@@ -42,6 +45,9 @@ const App = () => {
       <GlobalStyle />
       <AppProvider>
         <Routes>
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/partners-page" element={<PartnersPage />} />
+        <Route path="/contact-users" element={<ContactsPage />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/calendar" element={<Calendar />} />

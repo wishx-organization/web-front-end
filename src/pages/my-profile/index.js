@@ -170,7 +170,6 @@ class MyProfile extends Component {
                                                             </SwiperSlide>
                                                         ))
                                                     }
-
                                                 </Swiper>
                                             </Division>
                                         </div>
@@ -248,7 +247,7 @@ class MyProfile extends Component {
                                                 <Photo src='https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/31jPSK41kEL.jpg' />
                                                 <Person>{index.person}</Person>
                                                 <Parag>Birthday {index.date}</Parag>
-                                                <Parags>{index.time} min ago</Parags>
+                                                <Parags>1 min ago</Parags>
                                                 <DisplayTopText><span style={{ color: 'grey' }}>$10 to </span> Andrew Retriver’s</DisplayTopText>
                                                 <DisplayBirthdaytext>Birthday on 25 Dec 2022</DisplayBirthdaytext>
                                                 <DisplayTime>2 min ago</DisplayTime>

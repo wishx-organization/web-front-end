@@ -268,6 +268,6 @@ class MobileMessage extends Component {
 
         )
     }
-}console.log("MOBILEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE")
+}
 
 export default MobileMessage;
