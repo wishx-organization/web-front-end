@@ -84,8 +84,12 @@ export const TabsMainContainer = styled.div`
   border: 1px solid grey;
   border-radius: 10px;
 
-  @media (min-width: 375px) and (max-width: 1540px) {
+  @media (min-width: 375px) and (max-width: 1535px) {
     overflow-y: scroll;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 `
 
